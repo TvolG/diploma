@@ -5,6 +5,10 @@
     <key>ru</key>
     <value>Стандартные подсистемы</value>
   </synonym>
+  <content>884dab3d-c0e6-4e98-9f54-5efb12ce4acd</content>
+  <content>1573e5b2-cc34-4ce8-aebe-52dd13f3d6b1</content>
+  <content>Constant.ВКМ_НоменклатураРаботыСпециалиста</content>
+  <content>Constant.ВКМ_НоменклатураАбонентскаяПлата</content>
   <subsystems>АнализЖурналаРегистрации</subsystems>
   <subsystems>БазоваяФункциональность</subsystems>
   <subsystems>ВариантыОтчетов</subsystems>

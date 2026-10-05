@@ -15,4 +15,15 @@
   <content>Document.ОплатаПоставщику</content>
   <content>Report.ЗадолженностьПокупателей</content>
   <content>Report.ЗадолженностьПоставщикам</content>
+  <content>Document.НачислениеФиксированнойПремии</content>
+  <content>Document.ВКМ_НачислениеЗарплаты</content>
+  <content>AccumulationRegister.ВзаиморасчетыССотрудниками</content>
+  <content>Document.ВыплатаЗарплаты</content>
+  <content>CalculationRegister.ОсновныеНачисления</content>
+  <content>CalculationRegister.ДополнительныеНачисления</content>
+  <content>CalculationRegister.Удержания</content>
+  <content>ChartOfCalculationTypes.ОсновныеНачисления</content>
+  <content>ChartOfCalculationTypes.ДополнительныеНачисления</content>
+  <content>ChartOfCalculationTypes.Удержания</content>
+  <content>Document.ГрафикОтпусков</content>
 </mdclass:Subsystem>

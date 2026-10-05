@@ -11,6 +11,7 @@
     <types>CatalogManager.КонтрагентыПрисоединенныеФайлы</types>
     <types>CatalogManager.РеализацияТоваровУслугПрисоединенныеФайлы</types>
     <types>CatalogManager.ДоговорыКонтрагентовПрисоединенныеФайлы</types>
+    <types>CatalogManager.ВКМ_ОбслуживаниеКлиентаПрисоединенныеФайлы</types>
     <types>CatalogManager.ОрганизацииПрисоединенныеФайлы</types>
     <types>CatalogManager.ЗаказПокупателяПрисоединенныеФайлы</types>
   </source>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a925d2b3-88cd-4a4f-8fea-11e1dc02b261">
+  <producedTypes>
+    <managerType typeId="4df1830b-607b-42e9-ab34-bda9d4032e44" valueTypeId="6c90fc77-e387-4b25-a1dd-e947998fca8c"/>
+    <valueManagerType typeId="34a269fd-2047-43a5-9e96-13bcfd4553cf" valueTypeId="d8b926d5-e3ea-4bd3-82be-2f7b16103a0a"/>
+    <valueKeyType typeId="b2115d28-06fd-4b7f-9d48-b844cb3a8e7d" valueTypeId="1f607e7d-309a-4756-b88d-da6d6be166f3"/>
+  </producedTypes>
+  <name>ВКМ_НоменклатураРаботыСпециалиста</name>
+  <synonym>
+    <key>ru</key>
+    <value>Номенклатура работы специалиста</value>
+  </synonym>
+  <type>
+    <types>CatalogRef.Номенклатура</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

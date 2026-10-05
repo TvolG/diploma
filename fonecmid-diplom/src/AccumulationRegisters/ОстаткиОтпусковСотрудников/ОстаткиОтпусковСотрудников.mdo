@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4fb6b5a9-95f0-4dc5-b446-248da639ec9b">
+  <producedTypes>
+    <selectionType typeId="ad0d467d-01b5-4e1c-a42b-1a9b1d973867" valueTypeId="b97dfe12-f699-48c0-b082-6fabf42ccca5"/>
+    <listType typeId="6cd8aded-69de-4af5-a618-5b639a0aeda3" valueTypeId="7aa7e47c-9d27-4120-a0f2-cc8e9df98ea9"/>
+    <managerType typeId="90be655d-252d-4813-a41d-5fa9060540d6" valueTypeId="5185b69b-7719-421e-844c-f3cb043a99c9"/>
+    <recordSetType typeId="e052645e-7328-49ff-b8f9-ea9cfb1f207a" valueTypeId="3de21986-7932-47a4-9e13-0565434f8c2a"/>
+    <recordKeyType typeId="be7634af-740b-4e71-be2e-b26f9711e41a" valueTypeId="06338c1e-1be1-47ca-982f-9b06d57f9e3d"/>
+    <recordType typeId="2936c3ec-4368-413f-a623-b2c94ca18354" valueTypeId="e24b1830-a603-4e37-9ce6-ef78ff21a875"/>
+  </producedTypes>
+  <name>ОстаткиОтпусковСотрудников</name>
+  <synonym>
+    <key>ru</key>
+    <value>Остатки отпусков сотрудников</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="6a2ad550-b2c7-46ba-afc1-a3cbb551cc90">
+    <name>КоличествоДней</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество дней</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="94f33e2a-0f00-4924-a791-80b3a9d27806">
+    <name>Сотрудник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сотрудник</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>
