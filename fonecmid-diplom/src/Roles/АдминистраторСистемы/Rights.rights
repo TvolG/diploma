@@ -2527,6 +2527,10 @@
 			<value>true</value>
 		</right>
 		<right>
+			<name>InteractiveOpenExtDataProcessors</name>
+			<value>true</value>
+		</right>
+		<right>
 			<name>Output</name>
 			<value>true</value>
 		</right>
