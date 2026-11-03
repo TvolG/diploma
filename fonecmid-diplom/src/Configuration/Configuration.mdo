@@ -629,7 +629,6 @@
   <roles>Role.Бухгалтер</roles>
   <roles>Role.ВКМ_ОтделКадров</roles>
   <roles>Role.Специалист</roles>
-  <roles>Role.тест</roles>
   <commonTemplates>CommonTemplate.ДанныеПечатиОбщиеРеквизиты</commonTemplates>
   <commonTemplates>CommonTemplate.ДанныеПечатиРегистрСимволов</commonTemplates>
   <commonTemplates>CommonTemplate.ИнструкцияКакВыполнитьНастройкуМакетаOfficeOpen</commonTemplates>
