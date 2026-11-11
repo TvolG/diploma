@@ -144,6 +144,7 @@
       <id>8</id>
       <autoFill>true</autoFill>
     </contextMenu>
+    <handlers><event>OnChange</event><name>КлиентПриИзменении</name></handlers>
     <type>InputField</type>
     <editMode>EnterOnInput</editMode>
     <showInHeader>true</showInHeader>
@@ -617,7 +618,8 @@
       <id>33</id>
       <horizontalAlign>Left</horizontalAlign>
       <autoFill>true</autoFill>
-    </autoCommandBar>
+
+</autoCommandBar>
     <searchStringAddition>
       <name>ВКМ_ВыполненныеРаботыСтрокаПоиска</name>
       <id>35</id>
@@ -773,7 +775,7 @@
     <id>-1</id>
     <horizontalAlign>Left</horizontalAlign>
     <autoFill>true</autoFill>
-  </autoCommandBar>
+  <items xsi:type="form:Button"><name>КнопкаДвиженияВКМ_ВыполненныеКлиентуРаботы</name><id>61</id><visible>true</visible><enabled>true</enabled><commandName>Form.Command.ДвиженияВКМ_ВыполненныеКлиентуРаботы</commandName><placementArea>UserCmds</placementArea></items></autoCommandBar>
   <handlers>
     <event>OnCreateAtServer</event>
     <name>ПриСозданииНаСервере</name>
@@ -805,7 +807,8 @@
     <main>true</main>
     <savedData>true</savedData>
   </attributes>
-  <commandInterface>
+  <formCommands><name>ДвиженияВКМ_ВыполненныеКлиентуРаботы</name><title><key>ru</key><value>Движения: ВКМ_ВыполненныеКлиентуРаботы</value></title><id>60</id><use><common>true</common></use><action xsi:type="form:FormCommandHandlerContainer"><handler><name>ДвиженияВКМ_ВыполненныеКлиентуРаботы</name></handler></action><currentRowUse>Auto</currentRowUse></formCommands>
+<commandInterface>
     <navigationPanel/>
     <commandBar/>
   </commandInterface>

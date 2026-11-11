@@ -238,6 +238,7 @@
         <id>30</id>
         <autoFill>true</autoFill>
       </contextMenu>
+      <handlers><event>OnChange</event><name>ДатыОтпускаПриИзменении</name></handlers>
       <type>InputField</type>
       <editMode>EnterOnInput</editMode>
       <showInHeader>true</showInHeader>
@@ -279,6 +280,7 @@
         <id>33</id>
         <autoFill>true</autoFill>
       </contextMenu>
+      <handlers><event>OnChange</event><name>ДатыОтпускаПриИзменении</name></handlers>
       <type>InputField</type>
       <editMode>EnterOnInput</editMode>
       <showInHeader>true</showInHeader>
@@ -337,7 +339,8 @@
       <id>12</id>
       <horizontalAlign>Left</horizontalAlign>
       <autoFill>true</autoFill>
-    </autoCommandBar>
+
+</autoCommandBar>
     <searchStringAddition>
       <name>ОтпускаСотрудниковСтрокаПоиска</name>
       <id>14</id>
@@ -482,7 +485,7 @@
     </items>
     <horizontalAlign>Left</horizontalAlign>
     <autoFill>true</autoFill>
-  </autoCommandBar>
+  <items xsi:type="form:Button"><name>КнопкаДвиженияОстаткиОтпусковСотрудников</name><id>41</id><visible>true</visible><enabled>true</enabled><commandName>Form.Command.ДвиженияОстаткиОтпусковСотрудников</commandName><placementArea>UserCmds</placementArea></items></autoCommandBar>
   <handlers>
     <event>OnOpen</event>
     <name>ПриОткрытии</name>
@@ -539,7 +542,8 @@
     </action>
     <currentRowUse>Auto</currentRowUse>
   </formCommands>
-  <commandInterface>
+  <formCommands><name>ДвиженияОстаткиОтпусковСотрудников</name><title><key>ru</key><value>Движения: ОстаткиОтпусковСотрудников</value></title><id>40</id><use><common>true</common></use><action xsi:type="form:FormCommandHandlerContainer"><handler><name>ДвиженияОстаткиОтпусковСотрудников</name></handler></action><currentRowUse>Auto</currentRowUse></formCommands>
+<commandInterface>
     <navigationPanel/>
     <commandBar/>
   </commandInterface>

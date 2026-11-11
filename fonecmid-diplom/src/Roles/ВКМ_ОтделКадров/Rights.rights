@@ -818,6 +818,10 @@
 	<object>
 		<name>Configuration.УправлениеITФирмой</name>
 		<right>
+			<name>ThickClient</name>
+			<value>true</value>
+		</right>
+		<right>
 			<name>ThinClient</name>
 			<value>true</value>
 		</right>
@@ -1121,4 +1125,13 @@
 			<value>true</value>
 		</right>
 	</object>
+	<object><name>InformationRegister.УсловияОплатыСотрудников</name><right><name>Read</name><value>true</value></right><right><name>View</name><value>true</value></right></object>
+	<object><name>AccumulationRegister.ВКМ_ВыполненныеКлиентуРаботы</name><right><name>Read</name><value>true</value></right><right><name>View</name><value>true</value></right></object>
+	<object><name>AccumulationRegister.ВзаиморасчетыССотрудниками</name><right><name>Read</name><value>true</value></right><right><name>View</name><value>true</value></right></object>
+	<object><name>AccumulationRegister.ОстаткиОтпусковСотрудников</name><right><name>Read</name><value>true</value></right><right><name>View</name><value>true</value></right></object>
+	<object><name>CalculationRegister.ОсновныеНачисления</name><right><name>Read</name><value>true</value></right><right><name>View</name><value>true</value></right></object>
+	<object><name>CalculationRegister.Удержания</name><right><name>Read</name><value>true</value></right><right><name>View</name><value>true</value></right></object>
+	<object><name>ChartOfCalculationTypes.ОсновныеНачисления</name><right><name>Read</name><value>true</value></right><right><name>View</name><value>true</value></right></object>
+	<object><name>ChartOfCalculationTypes.Удержания</name><right><name>Read</name><value>true</value></right><right><name>View</name><value>true</value></right></object>
+	<object><name>Subsystem.ЗарплатаИОтпуска</name><right><name>View</name><value>true</value></right></object>
 </Rights>

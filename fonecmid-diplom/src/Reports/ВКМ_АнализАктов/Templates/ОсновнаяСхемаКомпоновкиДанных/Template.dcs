@@ -25,7 +25,7 @@
 			<title xsi:type="v8:LocalStringType">
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Сумма план</v8:content>
+					<v8:content>Сумма работ</v8:content>
 				</v8:item>
 			</title>
 		</field>
@@ -43,50 +43,40 @@
 			</role>
 		</field>
 		<field xsi:type="DataSetFieldField">
-			<dataPath>ВКМ_Клиент</dataPath>
-			<field>ВКМ_Клиент</field>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>ВКМ_Договор</dataPath>
-			<field>ВКМ_Договор</field>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>ВКМ_Специалист</dataPath>
-			<field>ВКМ_Специалист</field>
-		</field>
-		<field xsi:type="DataSetFieldField">
 			<dataPath>СуммаФакт</dataPath>
 			<field>СуммаФакт</field>
 			<title xsi:type="v8:LocalStringType">
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Сумма факт(работа спеца)</v8:content>
+					<v8:content>Сумма акта</v8:content>
 				</v8:item>
 			</title>
 		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>Контрагент</dataPath>
-			<field>Контрагент</field>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>Номенклатура</dataPath>
-			<field>Номенклатура</field>
-		</field>
 		<dataSource>ИсточникДанных1</dataSource>
 		<query>ВЫБРАТЬ
-	План.ВКМ_Клиент КАК Клиент,
-	План.ВКМ_Договор КАК Договор,
-	СУММА(План.ВКМ_СуммаКОплатеОборот) КАК СуммаПлан,
-	СУММА(Факт.СуммаОборот) КАК СуммаФакт
+    Данные.Клиент КАК Клиент,
+    Данные.Договор КАК Договор,
+    СУММА(Данные.СуммаРабот) КАК СуммаПлан,
+    СУММА(Данные.СуммаАкта) КАК СуммаФакт
 ИЗ
-	РегистрНакопления.ВКМ_ВыполненныеКлиентуРаботы.Обороты(&amp;НачалоПериода, &amp;КонецПериода, , ) КАК План
-		ЛЕВОЕ СОЕДИНЕНИЕ РегистрНакопления.Продажи.Обороты(&amp;НачалоПериода, &amp;КонецПериода, , ) КАК Факт
-		ПО План.ВКМ_Клиент = Факт.Контрагент   
-		И Факт.Номенклатура = &amp;ВКМ_НоменклатураРаботыСпециалиста
-
-СГРУППИРОВАТЬ ПО
-	План.ВКМ_Клиент,
-	План.ВКМ_Договор</query>
+    (ВЫБРАТЬ
+        Работы.ВКМ_Клиент КАК Клиент,
+        Работы.ВКМ_Договор КАК Договор,
+        Работы.ВКМ_СуммаКОплатеОборот КАК СуммаРабот,
+        0 КАК СуммаАкта
+    ИЗ РегистрНакопления.ВКМ_ВыполненныеКлиентуРаботы.Обороты(&amp;НачалоПериода, &amp;КонецПериода, , ) КАК Работы
+    ОБЪЕДИНИТЬ ВСЕ
+    ВЫБРАТЬ
+        Акты.Контрагент,
+        Акты.Договор,
+        0,
+        Акты.СуммаДокумента
+    ИЗ Документ.РеализацияТоваровУслуг КАК Акты
+    ГДЕ Акты.Проведен И НЕ Акты.ПометкаУдаления
+        И Акты.Дата МЕЖДУ &amp;НачалоПериода И &amp;КонецПериода
+        И Акты.Договор.ВидДоговора = ЗНАЧЕНИЕ(Перечисление.ВидыДоговоровКонтрагентов.ВКМ_АбонентскоеОбслуживание)
+    ) КАК Данные
+СГРУППИРОВАТЬ ПО Данные.Клиент, Данные.Договор</query>
 	</dataSet>
 	<parameter>
 		<name>НачалоПериода</name>
@@ -103,7 +93,9 @@
 			</v8:DateQualifiers>
 		</valueType>
 		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
-		<useRestriction>false</useRestriction>
+		<expression>&amp;Период.ДатаНачала</expression>
+		<useRestriction>true</useRestriction>
+		<use>Always</use>
 	</parameter>
 	<parameter>
 		<name>КонецПериода</name>
@@ -120,40 +112,31 @@
 			</v8:DateQualifiers>
 		</valueType>
 		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
-		<useRestriction>false</useRestriction>
+		<expression>&amp;Период.ДатаОкончания</expression>
+		<useRestriction>true</useRestriction>
+		<use>Always</use>
 	</parameter>
+
 	<parameter>
-		<name>ВКМ_НоменклатураРаботыСпециалиста</name>
-		<title xsi:type="v8:LocalStringType">
-			<v8:item>
-				<v8:lang>ru</v8:lang>
-				<v8:content>ВКМ номенклатура работы специалиста</v8:content>
-			</v8:item>
-		</title>
-		<valueType>
-			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.Номенклатура</v8:Type>
-		</valueType>
-		<value xsi:nil="true"/>
-		<useRestriction>false</useRestriction>
+		<name>Период</name>
+		<title xsi:type="v8:LocalStringType"><v8:item><v8:lang>ru</v8:lang><v8:content>Период</v8:content></v8:item></title>
+		<valueType><v8:Type>v8:StandardPeriod</v8:Type></valueType>
+		<value xsi:type="v8:StandardPeriod"><v8:variant xsi:type="v8:StandardPeriodVariant">ThisMonth</v8:variant></value>
+		<useRestriction>false</useRestriction><use>Always</use>
 	</parameter>
+	<totalField><dataPath>СуммаПлан</dataPath><expression>Сумма(СуммаПлан)</expression></totalField>
+	<totalField><dataPath>СуммаФакт</dataPath><expression>Сумма(СуммаФакт)</expression></totalField>
 	<settingsVariant>
 		<dcsset:name>Основной</dcsset:name>
 		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
 		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
 			<dcsset:dataParameters>
-				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-					<dcscor:use>false</dcscor:use>
-					<dcscor:parameter>НачалоПериода</dcscor:parameter>
-					<dcscor:value xsi:type="xs:dateTime">0001-01-01T00:00:00</dcscor:value>
-					<dcsset:userSettingID>58ac45ed-4793-4eac-b0c8-5a8a9b6ea378</dcsset:userSettingID>
-				</dcscor:item>
-				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-					<dcscor:use>false</dcscor:use>
-					<dcscor:parameter>КонецПериода</dcscor:parameter>
-					<dcscor:value xsi:type="xs:dateTime">0001-01-01T00:00:00</dcscor:value>
-					<dcsset:userSettingID>5250e207-f8b1-4c9f-bb41-9e1f72442311</dcsset:userSettingID>
-				</dcscor:item>
-			</dcsset:dataParameters>
+                <dcscor:item xsi:type="dcsset:SettingsParameterValue">
+                    <dcscor:use>true</dcscor:use><dcscor:parameter>Период</dcscor:parameter>
+                    <dcscor:value xsi:type="v8:StandardPeriod"><v8:variant xsi:type="v8:StandardPeriodVariant">ThisMonth</v8:variant></dcscor:value>
+                    <dcsset:userSettingID>58ac45ed-4793-4eac-b0c8-5a8a9b6ea378</dcsset:userSettingID>
+                </dcscor:item>
+            </dcsset:dataParameters>
 			<dcsset:item xsi:type="dcsset:StructureItemGroup">
 				<dcsset:order>
 					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>

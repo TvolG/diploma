@@ -217,7 +217,8 @@
       <id>9</id>
       <horizontalAlign>Left</horizontalAlign>
       <autoFill>true</autoFill>
-    </autoCommandBar>
+
+</autoCommandBar>
     <searchStringAddition>
       <name>ВыплатыСтрокаПоиска</name>
       <id>11</id>
@@ -362,7 +363,7 @@
     </items>
     <horizontalAlign>Left</horizontalAlign>
     <autoFill>true</autoFill>
-  </autoCommandBar>
+  <items xsi:type="form:Button"><name>КнопкаДвиженияВзаиморасчетыССотрудниками</name><id>32</id><visible>true</visible><enabled>true</enabled><commandName>Form.Command.ДвиженияВзаиморасчетыССотрудниками</commandName><placementArea>UserCmds</placementArea></items></autoCommandBar>
   <saveWindowSettings>true</saveWindowSettings>
   <autoTitle>true</autoTitle>
   <autoUrl>true</autoUrl>
@@ -411,7 +412,8 @@
     </action>
     <currentRowUse>Auto</currentRowUse>
   </formCommands>
-  <commandInterface>
+  <formCommands><name>ДвиженияВзаиморасчетыССотрудниками</name><title><key>ru</key><value>Движения: ВзаиморасчетыССотрудниками</value></title><id>31</id><use><common>true</common></use><action xsi:type="form:FormCommandHandlerContainer"><handler><name>ДвиженияВзаиморасчетыССотрудниками</name></handler></action><currentRowUse>Auto</currentRowUse></formCommands>
+<commandInterface>
     <navigationPanel/>
     <commandBar/>
   </commandInterface>

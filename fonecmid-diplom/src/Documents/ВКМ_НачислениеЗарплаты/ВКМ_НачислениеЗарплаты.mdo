@@ -28,6 +28,11 @@
   <registerRecords>AccumulationRegister.ВзаиморасчетыССотрудниками</registerRecords>
   <registerRecords>CalculationRegister.ОсновныеНачисления</registerRecords>
   <registerRecords>CalculationRegister.ДополнительныеНачисления</registerRecords>
+  <defaultObjectForm>Document.ВКМ_НачислениеЗарплаты.Form.ФормаДокумента</defaultObjectForm>
+  <forms uuid="9c48fa75-5bbd-4aa8-b8c7-67b935f6f81a">
+    <name>ФормаДокумента</name>
+    <usePurposes>PersonalComputer</usePurposes>
+  </forms>
   <postInPrivilegedMode>true</postInPrivilegedMode>
   <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
   <attributes uuid="9c731475-e4f4-425d-bbd2-e9ae3af40005">
@@ -204,6 +209,54 @@
           <precision>15</precision>
           <scale>2</scale>
         </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="e999d029-61f3-4ceb-9408-72a415795798">
+      <name>ВидНачисления</name>
+      <synonym>
+        <key>ru</key>
+        <value>Вид начисления</value>
+      </synonym>
+      <type>
+        <types>ChartOfCalculationTypesRef.ОсновныеНачисления</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="71b5edbe-a9b6-416a-afaa-9de1b0202d79">
+      <name>ДатаНачала</name>
+      <synonym>
+        <key>ru</key>
+        <value>Начало начисления</value>
+      </synonym>
+      <type>
+        <types>Date</types>
+        <dateQualifiers>
+          <dateFractions>Date</dateFractions>
+        </dateQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="7cf1a504-4790-4e01-838e-80f048510ff4">
+      <name>ДатаОкончания</name>
+      <synonym>
+        <key>ru</key>
+        <value>Окончание начисления</value>
+      </synonym>
+      <type>
+        <types>Date</types>
+        <dateQualifiers>
+          <dateFractions>Date</dateFractions>
+        </dateQualifiers>
       </type>
       <minValue xsi:type="core:UndefinedValue"/>
       <maxValue xsi:type="core:UndefinedValue"/>
