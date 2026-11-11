@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e95cdfc9-d695-47d1-a5d9-d416d2a9e5da">
+  <name>ВКМ_ДобавленныеОбъекты</name><synonym><key>ru</key><value>Добавленные объекты</value></synonym>
+  <includeInCommandInterface>false</includeInCommandInterface>
+  <content>AccumulationRegister.ВКМ_ВыполненныеКлиентуРаботы</content>
+  <content>AccumulationRegister.ВКМ_ВыставленныеАкты</content>
+  <content>AccumulationRegister.ВзаиморасчетыССотрудниками</content>
+  <content>AccumulationRegister.ОстаткиОтпусковСотрудников</content>
+  <content>CalculationRegister.ДополнительныеНачисления</content>
+  <content>CalculationRegister.ОсновныеНачисления</content>
+  <content>CalculationRegister.Удержания</content>
+  <content>Catalog.ВКМ_ОбслуживаниеКлиентаПрисоединенныеФайлы</content>
+  <content>Catalog.ДоговорыКонтрагентов</content>
+  <content>ChartOfCalculationTypes.ДополнительныеНачисления</content>
+  <content>ChartOfCalculationTypes.ОсновныеНачисления</content>
+  <content>ChartOfCalculationTypes.Удержания</content>
+  <content>CommonTemplate.МакетАктаОбОказанныхУслугах</content>
+  <content>Constant.ВКМ_НоменклатураАбонентскаяПлата</content>
+  <content>Constant.ВКМ_НоменклатураРаботыСпециалиста</content>
+  <content>DataProcessor.ВКМ_МассовоеСозданиеАктов</content>
+  <content>Document.ВКМ_НачислениеЗарплаты</content>
+  <content>Document.ВКМ_ОбслуживаниеКлиента</content>
+  <content>Document.ВыплатаЗарплаты</content>
+  <content>Document.ГрафикОтпусков</content>
+  <content>Document.НачислениеФиксированнойПремии</content>
+  <content>Document.РеализацияТоваровУслуг</content>
+  <content>Enum.ВидыДоговоровКонтрагентов</content>
+  <content>Enum.Периодичность</content>
+  <content>InformationRegister.УсловияОплатыСотрудников</content>
+  <content>Report.ВКМ_АнализАктов</content>
+  <content>Report.ВКМ_ВыработкаСпециалистов</content>
+  <content>Report.ВКМ_РасходЗапланированныхОтпусков</content>
+  <content>Report.РасчётыССотрудниками</content>
+  <content>Role.Бухгалтер</content>
+  <content>Role.ВКМ_ОбслуживаниеКлиентов</content>
+  <content>Role.ВКМ_ОтделКадров</content>
+  <content>Role.Специалист</content>
+  <content>Subsystem.ВКМ_ЗарплатаИОтпуска</content>
+  <content>Subsystem.ОбслуживаниеКлиентов</content>
+</mdclass:Subsystem>

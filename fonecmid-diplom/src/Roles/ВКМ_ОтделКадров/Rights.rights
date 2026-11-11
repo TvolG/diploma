@@ -1133,5 +1133,5 @@
 	<object><name>CalculationRegister.Удержания</name><right><name>Read</name><value>true</value></right><right><name>View</name><value>true</value></right></object>
 	<object><name>ChartOfCalculationTypes.ОсновныеНачисления</name><right><name>Read</name><value>true</value></right><right><name>View</name><value>true</value></right></object>
 	<object><name>ChartOfCalculationTypes.Удержания</name><right><name>Read</name><value>true</value></right><right><name>View</name><value>true</value></right></object>
-	<object><name>Subsystem.ЗарплатаИОтпуска</name><right><name>View</name><value>true</value></right></object>
+	<object><name>Subsystem.ВКМ_ЗарплатаИОтпуска</name><right><name>View</name><value>true</value></right></object>
 </Rights>

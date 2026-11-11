@@ -67,14 +67,11 @@
     ИЗ РегистрНакопления.ВКМ_ВыполненныеКлиентуРаботы.Обороты(&amp;НачалоПериода, &amp;КонецПериода, , ) КАК Работы
     ОБЪЕДИНИТЬ ВСЕ
     ВЫБРАТЬ
-        Акты.Контрагент,
-        Акты.Договор,
+        Акты.ВКМ_Контрагент,
+        Акты.ВКМ_Договор,
         0,
-        Акты.СуммаДокумента
-    ИЗ Документ.РеализацияТоваровУслуг КАК Акты
-    ГДЕ Акты.Проведен И НЕ Акты.ПометкаУдаления
-        И Акты.Дата МЕЖДУ &amp;НачалоПериода И &amp;КонецПериода
-        И Акты.Договор.ВидДоговора = ЗНАЧЕНИЕ(Перечисление.ВидыДоговоровКонтрагентов.ВКМ_АбонентскоеОбслуживание)
+        Акты.ВКМ_СуммаОборот
+    ИЗ РегистрНакопления.ВКМ_ВыставленныеАкты.Обороты(&amp;НачалоПериода, &amp;КонецПериода, , ВКМ_Номенклатура = &amp;ВКМ_НоменклатураРаботыСпециалиста) КАК Акты
     ) КАК Данные
 СГРУППИРОВАТЬ ПО Данные.Клиент, Данные.Договор</query>
 	</dataSet>
@@ -126,6 +123,12 @@
 	</parameter>
 	<totalField><dataPath>СуммаПлан</dataPath><expression>Сумма(СуммаПлан)</expression></totalField>
 	<totalField><dataPath>СуммаФакт</dataPath><expression>Сумма(СуммаФакт)</expression></totalField>
+
+    <parameter>
+        <name>ВКМ_НоменклатураРаботыСпециалиста</name>
+        <valueType><v8:Type xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config">cfg:CatalogRef.Номенклатура</v8:Type></valueType>
+        <value xsi:nil="true"/><useRestriction>true</useRestriction><use>Always</use>
+    </parameter>
 	<settingsVariant>
 		<dcsset:name>Основной</dcsset:name>
 		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5cfab740-772f-4ffd-8878-4a73b8e63234">
-  <name>ЗарплатаИОтпуска</name>
+  <name>ВКМ_ЗарплатаИОтпуска</name>
   <synonym><key>ru</key><value>Зарплата и отпуска</value></synonym>
   <includeHelpInContents>true</includeHelpInContents>
   <includeInCommandInterface>true</includeInCommandInterface>
@@ -11,4 +11,5 @@
   <content>Report.РасчётыССотрудниками</content>
   <content>Report.ВКМ_РасходЗапланированныхОтпусков</content>
   <content>Report.ВКМ_ВыработкаСпециалистов</content>
+  <content>Document.НачислениеФиксированнойПремии</content>
 </mdclass:Subsystem>

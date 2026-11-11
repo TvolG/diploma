@@ -363,7 +363,7 @@
     </items>
     <horizontalAlign>Left</horizontalAlign>
     <autoFill>true</autoFill>
-  <items xsi:type="form:Button"><name>КнопкаДвиженияВзаиморасчетыССотрудниками</name><id>32</id><visible>true</visible><enabled>true</enabled><commandName>Form.Command.ДвиженияВзаиморасчетыССотрудниками</commandName><placementArea>UserCmds</placementArea></items></autoCommandBar>
+  <items xsi:type="form:Button"><name>КнопкаДвиженияВзаиморасчетыССотрудниками</name><id>32</id><visible>true</visible><enabled>true</enabled><commandName>Form.Command.ВКМ_ДвиженияВзаиморасчетыССотрудниками</commandName><placementArea>UserCmds</placementArea></items></autoCommandBar>
   <saveWindowSettings>true</saveWindowSettings>
   <autoTitle>true</autoTitle>
   <autoUrl>true</autoUrl>
@@ -412,7 +412,7 @@
     </action>
     <currentRowUse>Auto</currentRowUse>
   </formCommands>
-  <formCommands><name>ДвиженияВзаиморасчетыССотрудниками</name><title><key>ru</key><value>Движения: ВзаиморасчетыССотрудниками</value></title><id>31</id><use><common>true</common></use><action xsi:type="form:FormCommandHandlerContainer"><handler><name>ДвиженияВзаиморасчетыССотрудниками</name></handler></action><currentRowUse>Auto</currentRowUse></formCommands>
+  <formCommands><name>ВКМ_ДвиженияВзаиморасчетыССотрудниками</name><title><key>ru</key><value>Движения: ВзаиморасчетыССотрудниками</value></title><id>31</id><use><common>true</common></use><action xsi:type="form:FormCommandHandlerContainer"><handler><name>ВКМ_ДвиженияВзаиморасчетыССотрудниками</name></handler></action><currentRowUse>Auto</currentRowUse></formCommands>
 <commandInterface>
     <navigationPanel/>
     <commandBar/>

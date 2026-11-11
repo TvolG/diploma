@@ -55,7 +55,7 @@
   <subsystems>Subsystem.ПокупкиИПродажи</subsystems>
   <subsystems>Subsystem.СтандартныеПодсистемы</subsystems>
   <subsystems>Subsystem.ОбслуживаниеКлиентов</subsystems>
-  <subsystems>Subsystem.ЗарплатаИОтпуска</subsystems>
+  <subsystems>Subsystem.ВКМ_ЗарплатаИОтпуска</subsystems>
   <styleItems>StyleItem.ВажнаяНадписьШрифт</styleItems>
   <styleItems>StyleItem.ВладелецФайловШрифт</styleItems>
   <styleItems>StyleItem.ВычисленноеПравоДоступаЦвет</styleItems>
@@ -1411,4 +1411,6 @@
   <calculationRegisters>CalculationRegister.ОсновныеНачисления</calculationRegisters>
   <calculationRegisters>CalculationRegister.ДополнительныеНачисления</calculationRegisters>
   <calculationRegisters>CalculationRegister.Удержания</calculationRegisters>
+  <accumulationRegisters>AccumulationRegister.ВКМ_ВыставленныеАкты</accumulationRegisters>
+  <subsystems>Subsystem.ВКМ_ДобавленныеОбъекты</subsystems>
 </mdclass:Configuration>

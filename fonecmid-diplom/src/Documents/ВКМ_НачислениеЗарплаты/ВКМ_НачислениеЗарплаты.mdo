@@ -216,7 +216,7 @@
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
     <attributes uuid="e999d029-61f3-4ceb-9408-72a415795798">
-      <name>ВидНачисления</name>
+      <name>ВКМ_ВидНачисления</name>
       <synonym>
         <key>ru</key>
         <value>Вид начисления</value>
@@ -230,7 +230,7 @@
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
     <attributes uuid="71b5edbe-a9b6-416a-afaa-9de1b0202d79">
-      <name>ДатаНачала</name>
+      <name>ВКМ_ДатаНачала</name>
       <synonym>
         <key>ru</key>
         <value>Начало начисления</value>
@@ -247,7 +247,7 @@
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
     <attributes uuid="7cf1a504-4790-4e01-838e-80f048510ff4">
-      <name>ДатаОкончания</name>
+      <name>ВКМ_ДатаОкончания</name>
       <synonym>
         <key>ru</key>
         <value>Окончание начисления</value>

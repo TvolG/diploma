@@ -9,9 +9,9 @@ forms = [ROOT / 'Documents' / doc / 'Forms/ФормаДокумента/Form.for
 forms += [ROOT / 'Catalogs/ДоговорыКонтрагентов/Forms/ФормаЭлемента/Form.form',
           ROOT / 'DataProcessors/ВКМ_МассовоеСозданиеАктов/Forms/Форма/Form.form']
 xml_count = 0
-for folder in ('Documents', 'Catalogs', 'DataProcessors', 'Reports', 'Roles', 'Subsystems', 'Configuration'):
+for folder in ('Documents', 'Catalogs', 'DataProcessors', 'Reports', 'Roles', 'Subsystems', 'Configuration', 'AccumulationRegisters'):
     names = set(DOCS) | {'ДоговорыКонтрагентов', 'ВКМ_МассовоеСозданиеАктов', 'ВКМ_АнализАктов',
-                        'ВКМ_ОтделКадров', 'ВКМ_ОбслуживаниеКлиентов', 'ЗарплатаИОтпуска', 'Configuration'}
+                        'ВКМ_ОтделКадров', 'ВКМ_ОбслуживаниеКлиентов', 'ВКМ_ЗарплатаИОтпуска', 'ВКМ_ДобавленныеОбъекты', 'ВКМ_ВыставленныеАкты', 'Configuration'}
     for directory in (ROOT / folder).iterdir() if folder != 'Configuration' else [ROOT / folder]:
         if directory.name not in names:
             continue
@@ -49,3 +49,28 @@ for path in forms:
                 if len(parts) > 2 and parts[1] in tables:
                     assert parts[2] in tables[parts[1]] | {"LineNumber"}, (path, segment.text)
 print(f'PASS: {xml_count} XML files; {len(forms)} forms: unique elements, handlers, commands and document data paths')
+
+# New register must be a real metadata dependency of its writer, not just a query name.
+act_ref = 'AccumulationRegister.ВКМ_ВыставленныеАкты'
+act_register = ET.parse(ROOT / 'AccumulationRegisters/ВКМ_ВыставленныеАкты/ВКМ_ВыставленныеАкты.mdo').getroot()
+for item in act_register.findall('dimensions') + act_register.findall('resources'):
+    assert item.findtext('name').startswith('ВКМ_')
+    for type_name in item.findall('./type/types'):
+        if type_name.text.startswith('CatalogRef.'):
+            catalog = type_name.text.split('.', 1)[1]
+            assert (ROOT / 'Catalogs' / catalog / (catalog + '.mdo')).exists(), type_name.text
+configuration = ET.parse(ROOT / 'Configuration/Configuration.mdo').getroot()
+assert act_ref in [node.text for node in configuration.findall('accumulationRegisters')]
+realization = ET.parse(ROOT / 'Documents/РеализацияТоваровУслуг/РеализацияТоваровУслуг.mdo').getroot()
+assert act_ref in [node.text for node in realization.findall('registerRecords')]
+source_index = {}
+for path in ROOT.rglob('*.mdo'):
+    root = ET.parse(path).getroot()
+    source_index[root.tag.split('}')[-1] + '.' + root.findtext('name', '')] = path
+service = ET.parse(ROOT / 'Subsystems/ВКМ_ДобавленныеОбъекты/ВКМ_ДобавленныеОбъекты.mdo').getroot()
+for content in service.findall('content'):
+    assert content.text in source_index, ('missing object in service subsystem', content.text)
+writer = (ROOT / 'Documents/РеализацияТоваровУслуг/ObjectModule.bsl').read_text()
+known_fields = {'Период'} | {n.findtext('name') for n in act_register.findall('dimensions') + act_register.findall('resources')}
+assert set(re.findall(r'ДвижениеАкта\.(\w+)\s*=', writer)) <= known_fields
+print('PASS: new act register types, writer registration, movement fields and service subsystem references')
