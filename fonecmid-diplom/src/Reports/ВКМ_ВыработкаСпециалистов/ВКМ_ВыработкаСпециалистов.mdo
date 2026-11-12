@@ -7,7 +7,7 @@
   <name>ВКМ_ВыработкаСпециалистов</name>
   <synonym>
     <key>ru</key>
-    <value>ВКМ выработка специалистов</value>
+    <value>Выработка специалистов</value>
   </synonym>
   <useStandardCommands>true</useStandardCommands>
   <mainDataCompositionSchema>Report.ВКМ_ВыработкаСпециалистов.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>

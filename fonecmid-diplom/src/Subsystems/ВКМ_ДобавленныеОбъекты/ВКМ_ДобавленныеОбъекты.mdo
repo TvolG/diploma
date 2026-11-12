@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e95cdfc9-d695-47d1-a5d9-d416d2a9e5da">
+  <name>ВКМ_ДобавленныеОбъекты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Добавленные объекты</value>
+  </synonym>
+  <content>AccumulationRegister.ВКМ_ВзаиморасчетыССотрудниками</content>
+  <content>AccumulationRegister.ВКМ_ВыполненныеКлиентуРаботы</content>
+  <content>AccumulationRegister.ВКМ_ВыполненныеСотрудникомРаботы</content>
+  <content>AccumulationRegister.ВКМ_ВыставленныеАкты</content>
+  <content>AccumulationRegister.ВКМ_ОстаткиОтпусковСотрудников</content>
+  <content>CalculationRegister.ВКМ_ДополнительныеНачисления</content>
+  <content>CalculationRegister.ВКМ_ОсновныеНачисления</content>
+  <content>CalculationRegister.ВКМ_Удержания</content>
+  <content>Catalog.ВКМ_ОбслуживаниеКлиентаПрисоединенныеФайлы</content>
+  <content>Catalog.ДоговорыКонтрагентов</content>
+  <content>ChartOfCalculationTypes.ВКМ_ДополнительныеНачисления</content>
+  <content>ChartOfCalculationTypes.ВКМ_ОсновныеНачисления</content>
+  <content>ChartOfCalculationTypes.ВКМ_Удержания</content>
+  <content>CommonModule.ВКМ_ДемонстрационныеДанные</content>
+  <content>CommonModule.ВКМ_НачальнаяНастройка</content>
+  <content>CommonModule.ВКМ_РасчетЗарплаты</content>
+  <content>CommonTemplate.ВКМ_ДемоЛистУчета</content>
+  <content>CommonTemplate.ВКМ_МакетАктаОбОказанныхУслугах</content>
+  <content>Constant.ВКМ_НоменклатураАбонентскаяПлата</content>
+  <content>Constant.ВКМ_НоменклатураРаботыСпециалиста</content>
+  <content>DataProcessor.ВКМ_МассовоеСозданиеАктов</content>
+  <content>DataProcessor.ВКМ_СервисПроекта</content>
+  <content>Document.ВКМ_ВыплатаЗарплаты</content>
+  <content>Document.ВКМ_ГрафикОтпусков</content>
+  <content>Document.ВКМ_НачислениеЗарплаты</content>
+  <content>Document.ВКМ_НачислениеФиксированнойПремии</content>
+  <content>Document.ВКМ_ОбслуживаниеКлиента</content>
+  <content>Document.РеализацияТоваровУслуг</content>
+  <content>Enum.ВКМ_Периодичность</content>
+  <content>Enum.ВидыДоговоровКонтрагентов</content>
+  <content>InformationRegister.ВКМ_КалендарьРаботы</content>
+  <content>InformationRegister.ВКМ_СостояниеДемоДанных</content>
+  <content>InformationRegister.ВКМ_УсловияОплатыСотрудников</content>
+  <content>Report.ВКМ_АнализАктов</content>
+  <content>Report.ВКМ_ВыработкаСпециалистов</content>
+  <content>Report.ВКМ_РасходЗапланированныхОтпусков</content>
+  <content>Report.ВКМ_РасчётыССотрудниками</content>
+  <content>Role.ВКМ_Бухгалтер</content>
+  <content>Role.ВКМ_КадровикРасчетчик</content>
+  <content>Role.ВКМ_Менеджер</content>
+  <content>Role.ВКМ_ОбслуживаниеКлиентов</content>
+  <content>Role.ВКМ_ОтделКадров</content>
+  <content>Role.ВКМ_Специалист</content>
+  <content>Subsystem.ВКМ_ЗарплатаИОтпуска</content>
+  <content>Subsystem.ВКМ_ОбслуживаниеКлиентов</content>
+</mdclass:Subsystem>

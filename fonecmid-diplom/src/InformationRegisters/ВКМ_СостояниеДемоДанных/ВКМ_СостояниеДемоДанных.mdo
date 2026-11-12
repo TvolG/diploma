@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2f268450-42ef-485a-80f6-a3af1b103173">
+  <producedTypes>
+    <selectionType typeId="84cb595b-c44b-4328-a21f-79f4a9d936e7" valueTypeId="3bbf06d6-0c59-4c1e-914b-71fa75e24ceb"/>
+    <listType typeId="21c1ee2c-7a08-4dc6-b491-ac7fbb377c91" valueTypeId="f29061a6-aa80-463c-97c0-69101faecfef"/>
+    <managerType typeId="a90d9ed1-92e3-4247-b6fa-4afa983773d1" valueTypeId="c86eb98f-2cb1-4060-abd1-15036db357f5"/>
+    <recordSetType typeId="40ba0aef-9b3d-42b3-a978-61044efe4565" valueTypeId="3c13d36b-05b5-47dd-ab40-d77efc9c17d5"/>
+    <recordKeyType typeId="5cfdd6f0-545f-4620-a461-9f0ecf10859f" valueTypeId="8eb4a5d0-9207-4572-b277-6dc3fad72921"/>
+    <recordType typeId="5fd2249c-7bcf-4519-8eb5-60b129438b8c" valueTypeId="336a8cd3-0826-4e8a-b145-9b6c9d01ffb8"/>
+    <recordManagerType typeId="447f30b6-35e1-43d4-b302-decd1a6f1e1d" valueTypeId="a12bd920-4bc7-4efa-b0d5-8aa11d5ed63b"/>
+  </producedTypes>
+  <name>ВКМ_СостояниеДемоДанных</name>
+  <synonym>
+    <key>ru</key>
+    <value>Состояние демонстрационного набора</value>
+  </synonym>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="c56a70d1-cd52-436b-a782-dd797bc8e8f4">
+    <name>ВКМ_Готово</name>
+    <synonym>
+      <key>ru</key>
+      <value>Набор создан</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="75d595f2-a53d-4722-aca8-433b6295939a">
+    <name>ВКМ_Год</name>
+    <synonym>
+      <key>ru</key>
+      <value>Год демонстрации</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>4</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </dimensions>
+</mdclass:InformationRegister>

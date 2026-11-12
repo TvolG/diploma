@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonTemplate xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f2acfab1-95cc-4e72-8bb0-18b795ed5fd4">
+  <name>ВКМ_ДемоЛистУчета</name>
+  <synonym>
+    <key>ru</key>
+    <value>Демонстрационный лист учета времени</value>
+  </synonym>
+  <templateType>BinaryData</templateType>
+</mdclass:CommonTemplate>

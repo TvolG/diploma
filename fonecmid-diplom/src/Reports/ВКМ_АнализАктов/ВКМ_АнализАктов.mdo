@@ -7,7 +7,7 @@
   <name>ВКМ_АнализАктов</name>
   <synonym>
     <key>ru</key>
-    <value>ВКМ анализ актов</value>
+    <value>Анализ выставленных актов</value>
   </synonym>
   <useStandardCommands>true</useStandardCommands>
   <defaultForm>Report.ВКМ_АнализАктов.Form.ФормаОтчета</defaultForm>
