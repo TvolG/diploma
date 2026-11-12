@@ -8,7 +8,7 @@
     <name>НаборДанных</name>
     <field xsi:type="DataSetFieldField">
       <dataPath>Специалист</dataPath>
-      <field>Специалист<appearance><dcscor:item xsi:type="dcsset:SettingsParameterValue"><dcscor:parameter>Формат</dcscor:parameter><dcscor:value xsi:type="v8:LocalStringType"><v8:item><v8:lang>ru</v8:lang><v8:content>ЧДЦ=2;ЧН=0</v8:content></v8:item></dcscor:value></dcscor:item></appearance></field>
+      <field>Специалист</field>
       <title xsi:type="v8:LocalStringType">
         <v8:item>
           <v8:lang>ru</v8:lang>
@@ -21,16 +21,46 @@
     </field>
     <field xsi:type="DataSetFieldField">
       <dataPath>Часов</dataPath>
-      <field>Часов<appearance><dcscor:item xsi:type="dcsset:SettingsParameterValue"><dcscor:parameter>Формат</dcscor:parameter><dcscor:value xsi:type="v8:LocalStringType"><v8:item><v8:lang>ru</v8:lang><v8:content>ЧДЦ=2;ЧН=0</v8:content></v8:item></dcscor:value></dcscor:item></appearance></field>
+      <field>Часов</field>
       <title xsi:type="v8:LocalStringType">
-        <v8:item><v8:lang>ru</v8:lang><v8:content>Часов к оплате</v8:content></v8:item></title>
-    <appearance><dcscor:item xsi:type="dcsset:SettingsParameterValue"><dcscor:parameter>Формат</dcscor:parameter><dcscor:value xsi:type="v8:LocalStringType"><v8:item><v8:lang>ru</v8:lang><v8:content>ЧДЦ=2;ЧН=0</v8:content></v8:item></dcscor:value></dcscor:item></appearance></field>
+        <v8:item>
+          <v8:lang>ru</v8:lang>
+          <v8:content>Часов к оплате</v8:content>
+        </v8:item>
+      </title>
+      <appearance>
+        <dcscor:item xsi:type="dcsset:SettingsParameterValue">
+          <dcscor:parameter>Формат</dcscor:parameter>
+          <dcscor:value xsi:type="v8:LocalStringType">
+            <v8:item>
+              <v8:lang>ru</v8:lang>
+              <v8:content>ЧДЦ=2;ЧН=0</v8:content>
+            </v8:item>
+          </dcscor:value>
+        </dcscor:item>
+      </appearance>
+    </field>
     <field xsi:type="DataSetFieldField">
       <dataPath>СуммаНачисления</dataPath>
-      <field>СуммаНачисления<appearance><dcscor:item xsi:type="dcsset:SettingsParameterValue"><dcscor:parameter>Формат</dcscor:parameter><dcscor:value xsi:type="v8:LocalStringType"><v8:item><v8:lang>ru</v8:lang><v8:content>ЧДЦ=2;ЧН=0</v8:content></v8:item></dcscor:value></dcscor:item></appearance></field>
+      <field>СуммаНачисления</field>
       <title xsi:type="v8:LocalStringType">
-        <v8:item><v8:lang>ru</v8:lang><v8:content>Сумма начисления</v8:content></v8:item></title>
-    <appearance><dcscor:item xsi:type="dcsset:SettingsParameterValue"><dcscor:parameter>Формат</dcscor:parameter><dcscor:value xsi:type="v8:LocalStringType"><v8:item><v8:lang>ru</v8:lang><v8:content>ЧДЦ=2;ЧН=0</v8:content></v8:item></dcscor:value></dcscor:item></appearance></field>
+        <v8:item>
+          <v8:lang>ru</v8:lang>
+          <v8:content>Сумма начисления</v8:content>
+        </v8:item>
+      </title>
+      <appearance>
+        <dcscor:item xsi:type="dcsset:SettingsParameterValue">
+          <dcscor:parameter>Формат</dcscor:parameter>
+          <dcscor:value xsi:type="v8:LocalStringType">
+            <v8:item>
+              <v8:lang>ru</v8:lang>
+              <v8:content>ЧГ=3,0;ЧДЦ=2;ЧРД=,;ЧН=0,00</v8:content>
+            </v8:item>
+          </dcscor:value>
+        </dcscor:item>
+      </appearance>
+    </field>
     <dataSource>ИсточникДанных</dataSource>
     <query>ВЫБРАТЬ
  Работы.ВКМ_Сотрудник КАК Специалист,
@@ -98,7 +128,13 @@
           </dcscor:value>
           <dcsset:userSettingID>25a77d43-7932-4c06-83b0-01eebcde36ee</dcsset:userSettingID>
         </dcscor:item>
-      <dcscor:item xsi:type="dcsset:SettingsParameterValue"><dcscor:use>true</dcscor:use><dcscor:parameter>Специалист</dcscor:parameter><dcscor:value xsi:type="cfg:CatalogRef.Пользователи">00000000-0000-0000-0000-000000000000</dcscor:value><dcsset:userSettingID>82867481-6cc1-4c1a-8c6c-bf441883cdbb</dcsset:userSettingID></dcscor:item></dcsset:dataParameters>
+        <dcscor:item xsi:type="dcsset:SettingsParameterValue">
+          <dcscor:use>true</dcscor:use>
+          <dcscor:parameter>Специалист</dcscor:parameter>
+          <dcscor:value xsi:type="cfg:CatalogRef.Пользователи">00000000-0000-0000-0000-000000000000</dcscor:value>
+          <dcsset:userSettingID>82867481-6cc1-4c1a-8c6c-bf441883cdbb</dcsset:userSettingID>
+        </dcscor:item>
+      </dcsset:dataParameters>
       <dcsset:item xsi:type="dcsset:StructureItemGroup">
         <dcsset:selection>
           <dcsset:item xsi:type="dcsset:SelectedItemField">
@@ -112,6 +148,31 @@
           </dcsset:item>
         </dcsset:selection>
       </dcsset:item>
-    <dcsset:outputParameters><dcscor:item xsi:type="dcsset:SettingsParameterValue"><dcscor:parameter>Заголовок</dcscor:parameter><dcscor:value xsi:type="v8:LocalStringType"><v8:item><v8:lang>ru</v8:lang><v8:content>Выработка специалистов</v8:content></v8:item></dcscor:value></dcscor:item></dcsset:outputParameters></dcsset:settings>
+      <dcsset:outputParameters>
+        <dcscor:item xsi:type="dcsset:SettingsParameterValue">
+          <dcscor:parameter>Заголовок</dcscor:parameter>
+          <dcscor:value xsi:type="v8:LocalStringType">
+            <v8:item>
+              <v8:lang>ru</v8:lang>
+              <v8:content>Выработка специалистов</v8:content>
+            </v8:item>
+          </dcscor:value>
+        </dcscor:item>
+      </dcsset:outputParameters>
+    </dcsset:settings>
   </settingsVariant>
-<parameter><name>Специалист</name><title xsi:type="v8:LocalStringType"><v8:item><v8:lang>ru</v8:lang><v8:content>Специалист (пусто — все)</v8:content></v8:item></title><valueType><v8:Type>cfg:CatalogRef.Пользователи</v8:Type></valueType><value xsi:type="cfg:CatalogRef.Пользователи">00000000-0000-0000-0000-000000000000</value><use>Always</use></parameter></DataCompositionSchema>
+  <parameter>
+    <name>Специалист</name>
+    <title xsi:type="v8:LocalStringType">
+      <v8:item>
+        <v8:lang>ru</v8:lang>
+        <v8:content>Специалист (пусто — все)</v8:content>
+      </v8:item>
+    </title>
+    <valueType>
+      <v8:Type>cfg:CatalogRef.Пользователи</v8:Type>
+    </valueType>
+    <value xsi:type="cfg:CatalogRef.Пользователи">00000000-0000-0000-0000-000000000000</value>
+    <use>Always</use>
+  </parameter>
+</DataCompositionSchema>

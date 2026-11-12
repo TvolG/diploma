@@ -1,59 +1,81 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-	<dataSource>
-		<name>ИсточникДанных1</name>
-		<dataSourceType>Local</dataSourceType>
-	</dataSource>
-	<dataSet xsi:type="DataSetQuery">
-		<name>НаборДанных1</name>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>Клиент</dataPath>
-			<field>Клиент</field>
-			<title xsi:type="v8:LocalStringType">
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Клиент</v8:content>
-				</v8:item>
-			</title>
-			<role>
-				<dcscom:dimension>true</dcscom:dimension>
-			</role>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>СуммаПлан</dataPath>
-			<field>СуммаПлан</field>
-			<title xsi:type="v8:LocalStringType">
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Сумма работ</v8:content>
-				</v8:item>
-			</title>
-		<appearance><dcscor:item xsi:type="dcsset:SettingsParameterValue"><dcscor:parameter>Формат</dcscor:parameter><dcscor:value xsi:type="v8:LocalStringType"><v8:item><v8:lang>ru</v8:lang><v8:content>ЧГ=0;ЧДЦ=2;ЧРД=,</v8:content></v8:item></dcscor:value></dcscor:item></appearance></field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>Договор</dataPath>
-			<field>Договор</field>
-			<title xsi:type="v8:LocalStringType">
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Договор</v8:content>
-				</v8:item>
-			</title>
-			<role>
-				<dcscom:dimension>true</dcscom:dimension>
-			</role>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>СуммаФакт</dataPath>
-			<field>СуммаФакт</field>
-			<title xsi:type="v8:LocalStringType">
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Сумма акта</v8:content>
-				</v8:item>
-			</title>
-		<appearance><dcscor:item xsi:type="dcsset:SettingsParameterValue"><dcscor:parameter>Формат</dcscor:parameter><dcscor:value xsi:type="v8:LocalStringType"><v8:item><v8:lang>ru</v8:lang><v8:content>ЧГ=0;ЧДЦ=2;ЧРД=,</v8:content></v8:item></dcscor:value></dcscor:item></appearance></field>
-		<dataSource>ИсточникДанных1</dataSource>
-		<query>ВЫБРАТЬ
+  <dataSource>
+    <name>ИсточникДанных1</name>
+    <dataSourceType>Local</dataSourceType>
+  </dataSource>
+  <dataSet xsi:type="DataSetQuery">
+    <name>НаборДанных1</name>
+    <field xsi:type="DataSetFieldField">
+      <dataPath>Клиент</dataPath>
+      <field>Клиент</field>
+      <title xsi:type="v8:LocalStringType">
+        <v8:item>
+          <v8:lang>ru</v8:lang>
+          <v8:content>Клиент</v8:content>
+        </v8:item>
+      </title>
+      <role>
+        <dcscom:dimension>true</dcscom:dimension>
+      </role>
+    </field>
+    <field xsi:type="DataSetFieldField">
+      <dataPath>СуммаПлан</dataPath>
+      <field>СуммаПлан</field>
+      <title xsi:type="v8:LocalStringType">
+        <v8:item>
+          <v8:lang>ru</v8:lang>
+          <v8:content>Сумма работ</v8:content>
+        </v8:item>
+      </title>
+      <appearance>
+        <dcscor:item xsi:type="dcsset:SettingsParameterValue">
+          <dcscor:parameter>Формат</dcscor:parameter>
+          <dcscor:value xsi:type="v8:LocalStringType">
+            <v8:item>
+              <v8:lang>ru</v8:lang>
+              <v8:content>ЧГ=3,0;ЧДЦ=2;ЧРД=,;ЧН=0,00</v8:content>
+            </v8:item>
+          </dcscor:value>
+        </dcscor:item>
+      </appearance>
+    </field>
+    <field xsi:type="DataSetFieldField">
+      <dataPath>Договор</dataPath>
+      <field>Договор</field>
+      <title xsi:type="v8:LocalStringType">
+        <v8:item>
+          <v8:lang>ru</v8:lang>
+          <v8:content>Договор</v8:content>
+        </v8:item>
+      </title>
+      <role>
+        <dcscom:dimension>true</dcscom:dimension>
+      </role>
+    </field>
+    <field xsi:type="DataSetFieldField">
+      <dataPath>СуммаФакт</dataPath>
+      <field>СуммаФакт</field>
+      <title xsi:type="v8:LocalStringType">
+        <v8:item>
+          <v8:lang>ru</v8:lang>
+          <v8:content>Сумма акта</v8:content>
+        </v8:item>
+      </title>
+      <appearance>
+        <dcscor:item xsi:type="dcsset:SettingsParameterValue">
+          <dcscor:parameter>Формат</dcscor:parameter>
+          <dcscor:value xsi:type="v8:LocalStringType">
+            <v8:item>
+              <v8:lang>ru</v8:lang>
+              <v8:content>ЧГ=3,0;ЧДЦ=2;ЧРД=,;ЧН=0,00</v8:content>
+            </v8:item>
+          </dcscor:value>
+        </dcscor:item>
+      </appearance>
+    </field>
+    <dataSource>ИсточникДанных1</dataSource>
+    <query>ВЫБРАТЬ
     Данные.Клиент КАК Клиент,
     Данные.Договор КАК Договор,
     СУММА(Данные.СуммаРабот) КАК СуммаПлан,
@@ -74,94 +96,115 @@
     ИЗ РегистрНакопления.ВКМ_ВыставленныеАкты.Обороты(&amp;НачалоПериода, &amp;КонецПериода, , ВКМ_Номенклатура = &amp;ВКМ_НоменклатураРаботыСпециалиста) КАК Акты
     ) КАК Данные
 СГРУППИРОВАТЬ ПО Данные.Клиент, Данные.Договор</query>
-	</dataSet>
-	<parameter>
-		<name>НачалоПериода</name>
-		<title xsi:type="v8:LocalStringType">
-			<v8:item>
-				<v8:lang>ru</v8:lang>
-				<v8:content>Начало периода</v8:content>
-			</v8:item>
-		</title>
-		<valueType>
-			<v8:Type>xs:dateTime</v8:Type>
-			<v8:DateQualifiers>
-				<v8:DateFractions>DateTime</v8:DateFractions>
-			</v8:DateQualifiers>
-		</valueType>
-		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
-		<expression>&amp;Период.ДатаНачала</expression>
-		<useRestriction>true</useRestriction>
-		<use>Always</use>
-	</parameter>
-	<parameter>
-		<name>КонецПериода</name>
-		<title xsi:type="v8:LocalStringType">
-			<v8:item>
-				<v8:lang>ru</v8:lang>
-				<v8:content>Конец периода</v8:content>
-			</v8:item>
-		</title>
-		<valueType>
-			<v8:Type>xs:dateTime</v8:Type>
-			<v8:DateQualifiers>
-				<v8:DateFractions>DateTime</v8:DateFractions>
-			</v8:DateQualifiers>
-		</valueType>
-		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
-		<expression>&amp;Период.ДатаОкончания</expression>
-		<useRestriction>true</useRestriction>
-		<use>Always</use>
-	</parameter>
-
-	<parameter>
-		<name>Период</name>
-		<title xsi:type="v8:LocalStringType"><v8:item><v8:lang>ru</v8:lang><v8:content>Период</v8:content></v8:item></title>
-		<valueType><v8:Type>v8:StandardPeriod</v8:Type></valueType>
-		<value xsi:type="v8:StandardPeriod"><v8:variant xsi:type="v8:StandardPeriodVariant">ThisMonth</v8:variant></value>
-		<useRestriction>false</useRestriction><use>Always</use>
-	</parameter>
-	<totalField><dataPath>СуммаПлан</dataPath><expression>Сумма(СуммаПлан)</expression></totalField>
-	<totalField><dataPath>СуммаФакт</dataPath><expression>Сумма(СуммаФакт)</expression></totalField>
-
-    <parameter>
-        <name>ВКМ_НоменклатураРаботыСпециалиста</name>
-        <valueType><v8:Type xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config">cfg:CatalogRef.Номенклатура</v8:Type></valueType>
-        <value xsi:nil="true"/><useRestriction>true</useRestriction><use>Always</use>
-    </parameter>
-	<settingsVariant>
-		<dcsset:name>Основной</dcsset:name>
-		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
-		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
-			<dcsset:dataParameters>
-                <dcscor:item xsi:type="dcsset:SettingsParameterValue">
-                    <dcscor:use>true</dcscor:use><dcscor:parameter>Период</dcscor:parameter>
-                    <dcscor:value xsi:type="v8:StandardPeriod"><v8:variant xsi:type="v8:StandardPeriodVariant">ThisMonth</v8:variant></dcscor:value>
-                    <dcsset:userSettingID>58ac45ed-4793-4eac-b0c8-5a8a9b6ea378</dcsset:userSettingID>
-                </dcscor:item>
-            </dcsset:dataParameters>
-			<dcsset:item xsi:type="dcsset:StructureItemGroup">
-				<dcsset:order>
-					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
-				</dcsset:order>
-				<dcsset:selection>
-					<dcsset:item xsi:type="dcsset:SelectedItemAuto">
-						<dcsset:use>false</dcsset:use>
-					</dcsset:item>
-					<dcsset:item xsi:type="dcsset:SelectedItemField">
-						<dcsset:field>Договор</dcsset:field>
-					</dcsset:item>
-					<dcsset:item xsi:type="dcsset:SelectedItemField">
-						<dcsset:field>Клиент</dcsset:field>
-					</dcsset:item>
-					<dcsset:item xsi:type="dcsset:SelectedItemField">
-						<dcsset:field>СуммаПлан</dcsset:field>
-					</dcsset:item>
-					<dcsset:item xsi:type="dcsset:SelectedItemField">
-						<dcsset:field>СуммаФакт</dcsset:field>
-					</dcsset:item>
-				</dcsset:selection>
-			</dcsset:item>
-		</dcsset:settings>
-	</settingsVariant>
+  </dataSet>
+  <parameter>
+    <name>НачалоПериода</name>
+    <title xsi:type="v8:LocalStringType">
+      <v8:item>
+        <v8:lang>ru</v8:lang>
+        <v8:content>Начало периода</v8:content>
+      </v8:item>
+    </title>
+    <valueType>
+      <v8:Type>xs:dateTime</v8:Type>
+      <v8:DateQualifiers>
+        <v8:DateFractions>DateTime</v8:DateFractions>
+      </v8:DateQualifiers>
+    </valueType>
+    <value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+    <expression>&amp;Период.ДатаНачала</expression>
+    <useRestriction>true</useRestriction>
+    <use>Always</use>
+  </parameter>
+  <parameter>
+    <name>КонецПериода</name>
+    <title xsi:type="v8:LocalStringType">
+      <v8:item>
+        <v8:lang>ru</v8:lang>
+        <v8:content>Конец периода</v8:content>
+      </v8:item>
+    </title>
+    <valueType>
+      <v8:Type>xs:dateTime</v8:Type>
+      <v8:DateQualifiers>
+        <v8:DateFractions>DateTime</v8:DateFractions>
+      </v8:DateQualifiers>
+    </valueType>
+    <value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+    <expression>&amp;Период.ДатаОкончания</expression>
+    <useRestriction>true</useRestriction>
+    <use>Always</use>
+  </parameter>
+  <parameter>
+    <name>Период</name>
+    <title xsi:type="v8:LocalStringType">
+      <v8:item>
+        <v8:lang>ru</v8:lang>
+        <v8:content>Период</v8:content>
+      </v8:item>
+    </title>
+    <valueType>
+      <v8:Type>v8:StandardPeriod</v8:Type>
+    </valueType>
+    <value xsi:type="v8:StandardPeriod">
+      <v8:variant xsi:type="v8:StandardPeriodVariant">ThisMonth</v8:variant>
+    </value>
+    <useRestriction>false</useRestriction>
+    <use>Always</use>
+  </parameter>
+  <totalField>
+    <dataPath>СуммаПлан</dataPath>
+    <expression>Сумма(СуммаПлан)</expression>
+  </totalField>
+  <totalField>
+    <dataPath>СуммаФакт</dataPath>
+    <expression>Сумма(СуммаФакт)</expression>
+  </totalField>
+  <parameter>
+    <name>ВКМ_НоменклатураРаботыСпециалиста</name>
+    <valueType>
+      <v8:Type xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config">cfg:CatalogRef.Номенклатура</v8:Type>
+    </valueType>
+    <value xsi:nil="true"/>
+    <useRestriction>true</useRestriction>
+    <use>Always</use>
+  </parameter>
+  <settingsVariant>
+    <dcsset:name>Основной</dcsset:name>
+    <dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
+    <dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+      <dcsset:dataParameters>
+        <dcscor:item xsi:type="dcsset:SettingsParameterValue">
+          <dcscor:use>true</dcscor:use>
+          <dcscor:parameter>Период</dcscor:parameter>
+          <dcscor:value xsi:type="v8:StandardPeriod">
+            <v8:variant xsi:type="v8:StandardPeriodVariant">ThisMonth</v8:variant>
+          </dcscor:value>
+          <dcsset:userSettingID>58ac45ed-4793-4eac-b0c8-5a8a9b6ea378</dcsset:userSettingID>
+        </dcscor:item>
+      </dcsset:dataParameters>
+      <dcsset:item xsi:type="dcsset:StructureItemGroup">
+        <dcsset:order>
+          <dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+        </dcsset:order>
+        <dcsset:selection>
+          <dcsset:item xsi:type="dcsset:SelectedItemAuto">
+            <dcsset:use>false</dcsset:use>
+          </dcsset:item>
+          <dcsset:item xsi:type="dcsset:SelectedItemField">
+            <dcsset:field>Договор</dcsset:field>
+          </dcsset:item>
+          <dcsset:item xsi:type="dcsset:SelectedItemField">
+            <dcsset:field>Клиент</dcsset:field>
+          </dcsset:item>
+          <dcsset:item xsi:type="dcsset:SelectedItemField">
+            <dcsset:field>СуммаПлан</dcsset:field>
+          </dcsset:item>
+          <dcsset:item xsi:type="dcsset:SelectedItemField">
+            <dcsset:field>СуммаФакт</dcsset:field>
+          </dcsset:item>
+        </dcsset:selection>
+      </dcsset:item>
+    </dcsset:settings>
+  </settingsVariant>
 </DataCompositionSchema>

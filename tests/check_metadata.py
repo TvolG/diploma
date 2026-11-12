@@ -82,3 +82,17 @@ for doc in ('ВКМ_НачислениеЗарплаты', 'ВКМ_Начисл�
             for column in table.findall('items'):
                 assert column.findtext('title/value'), (doc, 'missing explicit caption', column.findtext('name'))
 print(f'PASS: visible headers in {checked_tables} business tables; explicit payroll/premium captions')
+
+# A dataset's field descriptor and its scalar <field> share the same XML name.
+# Appearance belongs to the descriptor, never inside the scalar field name.
+dcs_ns = '{http://v8.1c.ru/8.1/data-composition-system/schema}'
+dcs_count = 0
+for path in (ROOT / 'Reports').glob('ВКМ_*/Templates/*/*.dcs'):
+    root = ET.parse(path).getroot()
+    for dataset in root.findall(dcs_ns + 'dataSet'):
+        for descriptor in dataset.findall(dcs_ns + 'field'):
+            scalar = descriptor.find(dcs_ns + 'field')
+            if scalar is not None:
+                assert len(scalar) == 0, (path, scalar.text, 'nested elements inside scalar field name')
+    dcs_count += 1
+print(f'PASS: scalar field structure in {dcs_count} custom DCS schemas')

@@ -8,7 +8,7 @@
     <name>НаборДанных</name>
     <field xsi:type="DataSetFieldField">
       <dataPath>Сотрудник</dataPath>
-      <field>Сотрудник<appearance><dcscor:item xsi:type="dcsset:SettingsParameterValue"><dcscor:parameter>Формат</dcscor:parameter><dcscor:value xsi:type="v8:LocalStringType"><v8:item><v8:lang>ru</v8:lang><v8:content>ЧДЦ=2;ЧН=0</v8:content></v8:item></dcscor:value></dcscor:item></appearance></field>
+      <field>Сотрудник</field>
       <title xsi:type="v8:LocalStringType">
         <v8:item>
           <v8:lang>ru</v8:lang>
@@ -21,36 +21,88 @@
     </field>
     <field xsi:type="DataSetFieldField">
       <dataPath>ДолгНаНачало</dataPath>
-      <field>ДолгНаНачало<appearance><dcscor:item xsi:type="dcsset:SettingsParameterValue"><dcscor:parameter>Формат</dcscor:parameter><dcscor:value xsi:type="v8:LocalStringType"><v8:item><v8:lang>ru</v8:lang><v8:content>ЧДЦ=2;ЧН=0</v8:content></v8:item></dcscor:value></dcscor:item></appearance></field>
+      <field>ДолгНаНачало</field>
       <title xsi:type="v8:LocalStringType">
-        <v8:item><v8:lang>ru</v8:lang><v8:content>Сальдо на начало</v8:content></v8:item></title>
-    <appearance><dcscor:item xsi:type="dcsset:SettingsParameterValue"><dcscor:parameter>Формат</dcscor:parameter><dcscor:value xsi:type="v8:LocalStringType"><v8:item><v8:lang>ru</v8:lang><v8:content>ЧДЦ=2;ЧН=0</v8:content></v8:item></dcscor:value></dcscor:item></appearance></field>
+        <v8:item>
+          <v8:lang>ru</v8:lang>
+          <v8:content>Сальдо на начало</v8:content>
+        </v8:item>
+      </title>
+      <appearance>
+        <dcscor:item xsi:type="dcsset:SettingsParameterValue">
+          <dcscor:parameter>Формат</dcscor:parameter>
+          <dcscor:value xsi:type="v8:LocalStringType">
+            <v8:item>
+              <v8:lang>ru</v8:lang>
+              <v8:content>ЧГ=3,0;ЧДЦ=2;ЧРД=,;ЧН=0,00</v8:content>
+            </v8:item>
+          </dcscor:value>
+        </dcscor:item>
+      </appearance>
+    </field>
     <field xsi:type="DataSetFieldField">
       <dataPath>НачисленоКВыплате</dataPath>
-      <field>НачисленоКВыплате<appearance><dcscor:item xsi:type="dcsset:SettingsParameterValue"><dcscor:parameter>Формат</dcscor:parameter><dcscor:value xsi:type="v8:LocalStringType"><v8:item><v8:lang>ru</v8:lang><v8:content>ЧДЦ=2;ЧН=0</v8:content></v8:item></dcscor:value></dcscor:item></appearance></field>
+      <field>НачисленоКВыплате</field>
       <title xsi:type="v8:LocalStringType">
         <v8:item>
           <v8:lang>ru</v8:lang>
           <v8:content>Начислено к выплате</v8:content>
         </v8:item>
       </title>
-    <appearance><dcscor:item xsi:type="dcsset:SettingsParameterValue"><dcscor:parameter>Формат</dcscor:parameter><dcscor:value xsi:type="v8:LocalStringType"><v8:item><v8:lang>ru</v8:lang><v8:content>ЧДЦ=2;ЧН=0</v8:content></v8:item></dcscor:value></dcscor:item></appearance></field>
+      <appearance>
+        <dcscor:item xsi:type="dcsset:SettingsParameterValue">
+          <dcscor:parameter>Формат</dcscor:parameter>
+          <dcscor:value xsi:type="v8:LocalStringType">
+            <v8:item>
+              <v8:lang>ru</v8:lang>
+              <v8:content>ЧГ=3,0;ЧДЦ=2;ЧРД=,;ЧН=0,00</v8:content>
+            </v8:item>
+          </dcscor:value>
+        </dcscor:item>
+      </appearance>
+    </field>
     <field xsi:type="DataSetFieldField">
       <dataPath>Выплачено</dataPath>
-      <field>Выплачено<appearance><dcscor:item xsi:type="dcsset:SettingsParameterValue"><dcscor:parameter>Формат</dcscor:parameter><dcscor:value xsi:type="v8:LocalStringType"><v8:item><v8:lang>ru</v8:lang><v8:content>ЧДЦ=2;ЧН=0</v8:content></v8:item></dcscor:value></dcscor:item></appearance></field>
+      <field>Выплачено</field>
       <title xsi:type="v8:LocalStringType">
         <v8:item>
           <v8:lang>ru</v8:lang>
           <v8:content>Выплачено</v8:content>
         </v8:item>
       </title>
-    <appearance><dcscor:item xsi:type="dcsset:SettingsParameterValue"><dcscor:parameter>Формат</dcscor:parameter><dcscor:value xsi:type="v8:LocalStringType"><v8:item><v8:lang>ru</v8:lang><v8:content>ЧДЦ=2;ЧН=0</v8:content></v8:item></dcscor:value></dcscor:item></appearance></field>
+      <appearance>
+        <dcscor:item xsi:type="dcsset:SettingsParameterValue">
+          <dcscor:parameter>Формат</dcscor:parameter>
+          <dcscor:value xsi:type="v8:LocalStringType">
+            <v8:item>
+              <v8:lang>ru</v8:lang>
+              <v8:content>ЧГ=3,0;ЧДЦ=2;ЧРД=,;ЧН=0,00</v8:content>
+            </v8:item>
+          </dcscor:value>
+        </dcscor:item>
+      </appearance>
+    </field>
     <field xsi:type="DataSetFieldField">
       <dataPath>ДолгНаКонец</dataPath>
-      <field>ДолгНаКонец<appearance><dcscor:item xsi:type="dcsset:SettingsParameterValue"><dcscor:parameter>Формат</dcscor:parameter><dcscor:value xsi:type="v8:LocalStringType"><v8:item><v8:lang>ru</v8:lang><v8:content>ЧДЦ=2;ЧН=0</v8:content></v8:item></dcscor:value></dcscor:item></appearance></field>
+      <field>ДолгНаКонец</field>
       <title xsi:type="v8:LocalStringType">
-        <v8:item><v8:lang>ru</v8:lang><v8:content>Сальдо на конец</v8:content></v8:item></title>
-    <appearance><dcscor:item xsi:type="dcsset:SettingsParameterValue"><dcscor:parameter>Формат</dcscor:parameter><dcscor:value xsi:type="v8:LocalStringType"><v8:item><v8:lang>ru</v8:lang><v8:content>ЧДЦ=2;ЧН=0</v8:content></v8:item></dcscor:value></dcscor:item></appearance></field>
+        <v8:item>
+          <v8:lang>ru</v8:lang>
+          <v8:content>Сальдо на конец</v8:content>
+        </v8:item>
+      </title>
+      <appearance>
+        <dcscor:item xsi:type="dcsset:SettingsParameterValue">
+          <dcscor:parameter>Формат</dcscor:parameter>
+          <dcscor:value xsi:type="v8:LocalStringType">
+            <v8:item>
+              <v8:lang>ru</v8:lang>
+              <v8:content>ЧГ=3,0;ЧДЦ=2;ЧРД=,;ЧН=0,00</v8:content>
+            </v8:item>
+          </dcscor:value>
+        </dcscor:item>
+      </appearance>
+    </field>
     <dataSource>ИсточникДанных</dataSource>
     <query>ВЫБРАТЬ
  Расчеты.Сотрудник КАК Сотрудник,
@@ -146,6 +198,17 @@
           </dcsset:item>
         </dcsset:selection>
       </dcsset:item>
-    <dcsset:outputParameters><dcscor:item xsi:type="dcsset:SettingsParameterValue"><dcscor:parameter>Заголовок</dcscor:parameter><dcscor:value xsi:type="v8:LocalStringType"><v8:item><v8:lang>ru</v8:lang><v8:content>Расчёты с сотрудниками (сальдо: + долг организации, − долг сотрудника)</v8:content></v8:item></dcscor:value></dcscor:item></dcsset:outputParameters></dcsset:settings>
+      <dcsset:outputParameters>
+        <dcscor:item xsi:type="dcsset:SettingsParameterValue">
+          <dcscor:parameter>Заголовок</dcscor:parameter>
+          <dcscor:value xsi:type="v8:LocalStringType">
+            <v8:item>
+              <v8:lang>ru</v8:lang>
+              <v8:content>Расчёты с сотрудниками (сальдо: + долг организации, − долг сотрудника)</v8:content>
+            </v8:item>
+          </dcscor:value>
+        </dcscor:item>
+      </dcsset:outputParameters>
+    </dcsset:settings>
   </settingsVariant>
 </DataCompositionSchema>
