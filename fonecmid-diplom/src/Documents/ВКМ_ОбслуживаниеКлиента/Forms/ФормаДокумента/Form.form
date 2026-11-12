@@ -129,10 +129,6 @@
     <dataPath xsi:type="form:DataPath">
       <segments>Объект.ВКМ_Клиент</segments>
     </dataPath>
-    <handlers>
-      <event>OnChange</event>
-      <name>ВКМ_КлиентПриИзменении</name>
-    </handlers>
     <extendedTooltip>
       <name>ВКМ_КлиентРасширеннаяПодсказка</name>
       <id>9</id>
@@ -775,34 +771,9 @@
   <autoCommandBar>
     <name>ФормаКоманднаяПанель</name>
     <id>-1</id>
-    <items xsi:type="form:Button">
-      <name>КнопкаДвиженияВКМ_ВыполненныеКлиентуРаботы</name>
-      <id>61</id>
-      <visible>true</visible>
-      <enabled>true</enabled>
-      <userVisible>
-        <common>true</common>
-      </userVisible>
-      <extendedTooltip>
-        <name>КнопкаДвиженияВКМ_ВыполненныеКлиентуРаботыРасширеннаяПодсказка</name>
-        <id>62</id>
-        <type>Label</type>
-        <autoMaxWidth>true</autoMaxWidth>
-        <autoMaxHeight>true</autoMaxHeight>
-        <extInfo xsi:type="form:LabelDecorationExtInfo">
-          <horizontalAlign>Left</horizontalAlign>
-        </extInfo>
-      </extendedTooltip>
-      <commandName>Form.Command.ВКМ_ДвиженияВКМ_ВыполненныеКлиентуРаботы</commandName>
-      <placementArea>UserCmds</placementArea>
-    </items>
     <horizontalAlign>Left</horizontalAlign>
     <autoFill>true</autoFill>
   </autoCommandBar>
-  <handlers>
-    <event>OnOpen</event>
-    <name>ПриОткрытии</name>
-  </handlers>
   <handlers>
     <event>OnCreateAtServer</event>
     <name>ПриСозданииНаСервере</name>
@@ -834,36 +805,11 @@
     <main>true</main>
     <savedData>true</savedData>
   </attributes>
-  <formCommands>
-    <name>ВКМ_ДвиженияВКМ_ВыполненныеКлиентуРаботы</name>
-    <title>
-      <key>ru</key>
-      <value>Движения: ВКМ_ВыполненныеКлиентуРаботы</value>
-    </title>
-    <id>60</id>
-    <use>
-      <common>true</common>
-    </use>
-    <action xsi:type="form:FormCommandHandlerContainer">
-      <handler>
-        <name>ВКМ_ДвиженияВКМ_ВыполненныеКлиентуРаботы</name>
-      </handler>
-    </action>
-    <currentRowUse>Auto</currentRowUse>
-  </formCommands>
   <commandInterface>
     <navigationPanel/>
     <commandBar/>
   </commandInterface>
   <extInfo xsi:type="form:DocumentFormExtInfo">
-    <handlers>
-      <event>AfterWrite</event>
-      <name>ПослеЗаписи</name>
-    </handlers>
-    <handlers>
-      <event>OnReadAtServer</event>
-      <name>ПриЧтенииНаСервере</name>
-    </handlers>
     <repostOnWrite>true</repostOnWrite>
   </extInfo>
 </form:Form>

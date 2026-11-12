@@ -127,7 +127,7 @@
 		</right>
 	</object>
 	<object>
-		<name>Report.ВКМ_РасчётыССотрудниками</name>
+		<name>Report.РасчётыССотрудниками</name>
 		<right>
 			<name>Use</name>
 			<value>true</value>
@@ -221,28 +221,6 @@
 		</right>
 	</object>
 	<object>
-		<name>AccumulationRegister.ВКМ_ОстаткиОтпусковСотрудников</name>
-		<right>
-			<name>Read</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>CalculationRegister.ВКМ_Удержания</name>
-		<right>
-			<name>Read</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
 		<name>Report.ВКМ_РасходЗапланированныхОтпусков</name>
 		<right>
 			<name>Use</name>
@@ -265,29 +243,11 @@
 		</right>
 	</object>
 	<object>
-		<name>ChartOfCalculationTypes.ВКМ_ОсновныеНачисления</name>
-		<right>
-			<name>Read</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
 		<name>Report.ВКМ_ВыработкаСпециалистов</name>
 		<right>
 			<name>Use</name>
 			<value>true</value>
 		</right>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>Subsystem.ВКМ_ЗарплатаИОтпуска</name>
 		<right>
 			<name>View</name>
 			<value>true</value>
@@ -302,17 +262,6 @@
 	</object>
 	<object>
 		<name>Catalog.ПользовательскиеНастройкиОтчетов</name>
-		<right>
-			<name>Read</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>AccumulationRegister.ВКМ_ВзаиморасчетыССотрудниками</name>
 		<right>
 			<name>Read</name>
 			<value>true</value>
@@ -446,28 +395,6 @@
 		</right>
 	</object>
 	<object>
-		<name>ChartOfCalculationTypes.ВКМ_Удержания</name>
-		<right>
-			<name>Read</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>CalculationRegister.ВКМ_ОсновныеНачисления</name>
-		<right>
-			<name>Read</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
 		<name>Catalog.ПредопределенныеВариантыОтчетов</name>
 		<right>
 			<name>Read</name>
@@ -511,7 +438,7 @@
 		</right>
 	</object>
 	<object>
-		<name>Document.ВКМ_ГрафикОтпусков</name>
+		<name>Document.ГрафикОтпусков</name>
 		<right>
 			<name>Read</name>
 			<value>true</value>
@@ -654,17 +581,6 @@
 		</right>
 	</object>
 	<object>
-		<name>AccumulationRegister.ВКМ_ВыполненныеКлиентуРаботы</name>
-		<right>
-			<name>Read</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
 		<name>Subsystem.СтандартныеПодсистемы.Subsystem.КонтактнаяИнформация</name>
 		<right>
 			<name>View</name>
@@ -683,7 +599,7 @@
 		</right>
 	</object>
 	<object>
-		<name>Document.ВКМ_ВыплатаЗарплаты</name>
+		<name>Document.ВыплатаЗарплаты</name>
 		<right>
 			<name>Read</name>
 			<value>true</value>
@@ -889,17 +805,6 @@
 		</right>
 	</object>
 	<object>
-		<name>InformationRegister.ВКМ_УсловияОплатыСотрудников</name>
-		<right>
-			<name>Read</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
 		<name>Catalog.КонтрагентыПрисоединенныеФайлы</name>
 		<right>
 			<name>Read</name>
@@ -922,10 +827,6 @@
 		</right>
 		<right>
 			<name>MobileClient</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>ThickClient</name>
 			<value>true</value>
 		</right>
 		<right>
@@ -1203,7 +1104,7 @@
 		</right>
 	</object>
 	<object>
-		<name>Subsystem.ВКМ_ОбслуживаниеКлиентов</name>
+		<name>Subsystem.ОбслуживаниеКлиентов</name>
 		<right>
 			<name>View</name>
 			<value>true</value>

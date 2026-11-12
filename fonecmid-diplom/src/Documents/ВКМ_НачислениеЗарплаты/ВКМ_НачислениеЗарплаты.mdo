@@ -10,7 +10,7 @@
   <name>ВКМ_НачислениеЗарплаты</name>
   <synonym>
     <key>ru</key>
-    <value>Начисление зарплаты</value>
+    <value>ВКМ начисление зарплаты</value>
   </synonym>
   <useStandardCommands>true</useStandardCommands>
   <inputByString>Document.ВКМ_НачислениеЗарплаты.StandardAttribute.Number</inputByString>
@@ -23,12 +23,11 @@
   <numberAllowedLength>Variable</numberAllowedLength>
   <checkUnique>true</checkUnique>
   <autonumbering>true</autonumbering>
-  <defaultObjectForm>Document.ВКМ_НачислениеЗарплаты.Form.ФормаДокумента</defaultObjectForm>
-  <registerRecords>AccumulationRegister.ВКМ_ОстаткиОтпусковСотрудников</registerRecords>
-  <registerRecords>CalculationRegister.ВКМ_Удержания</registerRecords>
-  <registerRecords>AccumulationRegister.ВКМ_ВзаиморасчетыССотрудниками</registerRecords>
-  <registerRecords>CalculationRegister.ВКМ_ОсновныеНачисления</registerRecords>
-  <registerRecords>CalculationRegister.ВКМ_ДополнительныеНачисления</registerRecords>
+  <registerRecords>AccumulationRegister.ОстаткиОтпусковСотрудников</registerRecords>
+  <registerRecords>CalculationRegister.Удержания</registerRecords>
+  <registerRecords>AccumulationRegister.ВзаиморасчетыССотрудниками</registerRecords>
+  <registerRecords>CalculationRegister.ОсновныеНачисления</registerRecords>
+  <registerRecords>CalculationRegister.ДополнительныеНачисления</registerRecords>
   <postInPrivilegedMode>true</postInPrivilegedMode>
   <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
   <attributes uuid="9c731475-e4f4-425d-bbd2-e9ae3af40005">
@@ -79,10 +78,6 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <forms uuid="9c48fa75-5bbd-4aa8-b8c7-67b935f6f81a">
-    <name>ФормаДокумента</name>
-    <usePurposes>PersonalComputer</usePurposes>
-  </forms>
   <tabularSections uuid="66f86137-6d8e-4a06-a5eb-0f54b93c545d">
     <producedTypes>
       <objectType typeId="1a9d6496-827c-496c-97fb-a0e33243bf04" valueTypeId="456d4773-2133-4be3-bb53-276ee0618b39"/>
@@ -111,7 +106,7 @@
       <name>Оклад</name>
       <synonym>
         <key>ru</key>
-        <value>Начислено по окладу</value>
+        <value>Оклад</value>
       </synonym>
       <type>
         <types>Number</types>
@@ -129,7 +124,7 @@
       <name>ПроцентОтРабот</name>
       <synonym>
         <key>ru</key>
-        <value>Вознаграждение за работы</value>
+        <value>Процент от работ</value>
       </synonym>
       <type>
         <types>Number</types>
@@ -214,132 +209,6 @@
       <maxValue xsi:type="core:UndefinedValue"/>
       <dataHistory>Use</dataHistory>
       <fullTextSearch>Use</fullTextSearch>
-    </attributes>
-    <attributes uuid="e999d029-61f3-4ceb-9408-72a415795798">
-      <name>ВКМ_ВидНачисления</name>
-      <synonym>
-        <key>ru</key>
-        <value>Вид начисления</value>
-      </synonym>
-      <type>
-        <types>ChartOfCalculationTypesRef.ВКМ_ОсновныеНачисления</types>
-      </type>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <dataHistory>Use</dataHistory>
-      <fullTextSearch>Use</fullTextSearch>
-    </attributes>
-    <attributes uuid="71b5edbe-a9b6-416a-afaa-9de1b0202d79">
-      <name>ВКМ_ДатаНачала</name>
-      <synonym>
-        <key>ru</key>
-        <value>Начало начисления</value>
-      </synonym>
-      <type>
-        <types>Date</types>
-        <dateQualifiers>
-          <dateFractions>Date</dateFractions>
-        </dateQualifiers>
-      </type>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <dataHistory>Use</dataHistory>
-      <fullTextSearch>Use</fullTextSearch>
-    </attributes>
-    <attributes uuid="7cf1a504-4790-4e01-838e-80f048510ff4">
-      <name>ВКМ_ДатаОкончания</name>
-      <synonym>
-        <key>ru</key>
-        <value>Окончание начисления</value>
-      </synonym>
-      <type>
-        <types>Date</types>
-        <dateQualifiers>
-          <dateFractions>Date</dateFractions>
-        </dateQualifiers>
-      </type>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <dataHistory>Use</dataHistory>
-      <fullTextSearch>Use</fullTextSearch>
-    </attributes>
-    <attributes uuid="fa11ba76-5e6e-4f35-bbdd-5477050f7ef3">
-      <name>ВКМ_ДатаРаботНачало</name>
-      <synonym>
-        <key>ru</key>
-        <value>Начало периода работ</value>
-      </synonym>
-      <type>
-        <types>Date</types>
-        <dateQualifiers>
-          <dateFractions>Date</dateFractions>
-        </dateQualifiers>
-      </type>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-    </attributes>
-    <attributes uuid="b29316fa-1ab1-4844-aa1e-a47409052962">
-      <name>ВКМ_ДатаРаботКонец</name>
-      <synonym>
-        <key>ru</key>
-        <value>Окончание периода работ</value>
-      </synonym>
-      <type>
-        <types>Date</types>
-        <dateQualifiers>
-          <dateFractions>Date</dateFractions>
-        </dateQualifiers>
-      </type>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-    </attributes>
-    <attributes uuid="57ca4606-c2a3-4773-8610-17a1ee38c9bc">
-      <name>ВКМ_СуммаОтпускных</name>
-      <synonym>
-        <key>ru</key>
-        <value>Отпускные</value>
-      </synonym>
-      <type>
-        <types>Number</types>
-        <numberQualifiers>
-          <precision>15</precision>
-          <scale>2</scale>
-        </numberQualifiers>
-      </type>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-    </attributes>
-    <attributes uuid="4e23603f-6c1f-48c5-8d13-445029596602">
-      <name>ВКМ_НормаДней</name>
-      <synonym>
-        <key>ru</key>
-        <value>Рабочих дней по норме</value>
-      </synonym>
-      <type>
-        <types>Number</types>
-        <numberQualifiers>
-          <precision>15</precision>
-          <scale>2</scale>
-        </numberQualifiers>
-      </type>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-    </attributes>
-    <attributes uuid="ed217632-581e-44da-9e0f-353c083368ed">
-      <name>ВКМ_ФактДней</name>
-      <synonym>
-        <key>ru</key>
-        <value>Фактически рабочих дней</value>
-      </synonym>
-      <type>
-        <types>Number</types>
-        <numberQualifiers>
-          <precision>15</precision>
-          <scale>2</scale>
-        </numberQualifiers>
-      </type>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
     </attributes>
   </tabularSections>
 </mdclass:Document>
