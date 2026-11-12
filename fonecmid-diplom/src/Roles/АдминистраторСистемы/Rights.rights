@@ -3381,7 +3381,7 @@
 		</right>
 	</object>
 	<object>
-		<name>Subsystem.ОбслуживаниеКлиентов</name>
+		<name>Subsystem.ВКМ_ОбслуживаниеКлиентов</name>
 		<right>
 			<name>View</name>
 			<value>true</value>

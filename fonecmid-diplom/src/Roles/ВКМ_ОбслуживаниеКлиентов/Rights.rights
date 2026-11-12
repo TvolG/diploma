@@ -1018,6 +1018,17 @@
 		</right>
 	</object>
 	<object>
+		<name>AccumulationRegister.ВКМ_ВыполненныеКлиентуРаботы</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>Constant.НастройкиКолонтитулов</name>
 		<right>
 			<name>Read</name>
@@ -1528,7 +1539,7 @@
 		</right>
 	</object>
 	<object>
-		<name>Subsystem.ОбслуживаниеКлиентов</name>
+		<name>Subsystem.ВКМ_ОбслуживаниеКлиентов</name>
 		<right>
 			<name>View</name>
 			<value>true</value>

@@ -7,7 +7,7 @@
   <name>ВКМ_РасходЗапланированныхОтпусков</name>
   <synonym>
     <key>ru</key>
-    <value>ВКМ расход запланированных отпусков</value>
+    <value>Расход запланированных отпусков</value>
   </synonym>
   <useStandardCommands>true</useStandardCommands>
   <mainDataCompositionSchema>Report.ВКМ_РасходЗапланированныхОтпусков.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>

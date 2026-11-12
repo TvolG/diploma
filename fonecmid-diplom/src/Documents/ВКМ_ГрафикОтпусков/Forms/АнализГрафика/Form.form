@@ -166,7 +166,7 @@
           <headerHorizontalAlign>Left</headerHorizontalAlign>
           <showInFooter>true</showInFooter>
           <extInfo xsi:type="form:InputFieldExtInfo">
-            <width>10</width>
+            <width>30</width>
             <autoMaxHeight>true</autoMaxHeight>
             <wrap>true</wrap>
             <extendedEditMultipleValues>true</extendedEditMultipleValues>

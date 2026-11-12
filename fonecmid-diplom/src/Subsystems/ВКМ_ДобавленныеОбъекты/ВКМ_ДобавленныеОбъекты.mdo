@@ -18,6 +18,7 @@
   <content>ChartOfCalculationTypes.ВКМ_ДополнительныеНачисления</content>
   <content>ChartOfCalculationTypes.ВКМ_ОсновныеНачисления</content>
   <content>ChartOfCalculationTypes.ВКМ_Удержания</content>
+  <content>CommonModule.ВКМ_ДемонстрационныеДанные</content>
   <content>CommonModule.ВКМ_НачальнаяНастройка</content>
   <content>CommonModule.ВКМ_РасчетЗарплаты</content>
   <content>CommonTemplate.ВКМ_ДемоЛистУчета</content>
