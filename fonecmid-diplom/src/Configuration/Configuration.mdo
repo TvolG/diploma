@@ -894,7 +894,6 @@
   <commonModules>CommonModule.ФизическиеЛицаКлиентСерверЛокализация</commonModules>
   <commonModules>CommonModule.ВКМ_РасчетЗарплаты</commonModules>
   <commonModules>CommonModule.ВКМ_НачальнаяНастройка</commonModules>
-  <commonModules>CommonModule.ВКМ_ДемонстрационныеДанные</commonModules>
   <exchangePlans>ExchangePlan.ОбновлениеИнформационнойБазы</exchangePlans>
   <xDTOPackages>XDTOPackage.ApdexExport</xDTOPackages>
   <xDTOPackages>XDTOPackage.ApdexExport_1_0_0_2</xDTOPackages>
