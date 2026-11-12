@@ -1,127 +1,47 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <form:Form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:form="http://g5.1c.ru/v8/dt/form">
   <items xsi:type="form:FormField">
-    <name>Номер</name>
-    <id>1</id>
+    <name>ВКМ_Год</name>
+    <id>601</id>
+    <title>
+      <key>ru</key>
+      <value>Год графика</value>
+    </title>
     <visible>true</visible>
     <enabled>true</enabled>
-    <userVisible>
-      <common>true</common>
-    </userVisible>
     <dataPath xsi:type="form:DataPath">
-      <segments>Объект.Number</segments>
+      <segments>ВКМ_Год</segments>
     </dataPath>
-    <extendedTooltip>
-      <name>НомерРасширеннаяПодсказка</name>
-      <id>3</id>
-      <type>Label</type>
-      <autoMaxWidth>true</autoMaxWidth>
-      <autoMaxHeight>true</autoMaxHeight>
-      <extInfo xsi:type="form:LabelDecorationExtInfo">
-        <horizontalAlign>Left</horizontalAlign>
-      </extInfo>
-    </extendedTooltip>
-    <contextMenu>
-      <name>НомерКонтекстноеМеню</name>
-      <id>2</id>
-      <autoFill>true</autoFill>
-    </contextMenu>
     <type>InputField</type>
-    <editMode>EnterOnInput</editMode>
-    <showInHeader>true</showInHeader>
-    <headerHorizontalAlign>Left</headerHorizontalAlign>
-    <showInFooter>true</showInFooter>
     <extInfo xsi:type="form:InputFieldExtInfo">
-      <autoMaxWidth>true</autoMaxWidth>
-      <autoMaxHeight>true</autoMaxHeight>
-      <wrap>true</wrap>
-      <extendedEditMultipleValues>true</extendedEditMultipleValues>
-      <chooseType>true</chooseType>
-      <typeDomainEnabled>true</typeDomainEnabled>
-      <textEdit>true</textEdit>
+      <width>8</width>
+      <format>
+        <key>ru</key>
+        <value>ЧГ=0;ЧДЦ=0</value>
+      </format>
     </extInfo>
+    <readOnly>true</readOnly>
   </items>
   <items xsi:type="form:FormField">
-    <name>Дата</name>
-    <id>4</id>
+    <name>ВКМ_Месяц</name>
+    <id>602</id>
+    <title>
+      <key>ru</key>
+      <value>Масштаб</value>
+    </title>
     <visible>true</visible>
     <enabled>true</enabled>
-    <userVisible>
-      <common>true</common>
-    </userVisible>
     <dataPath xsi:type="form:DataPath">
-      <segments>Объект.Date</segments>
+      <segments>ВКМ_Месяц</segments>
     </dataPath>
-    <extendedTooltip>
-      <name>ДатаРасширеннаяПодсказка</name>
-      <id>6</id>
-      <type>Label</type>
-      <autoMaxWidth>true</autoMaxWidth>
-      <autoMaxHeight>true</autoMaxHeight>
-      <extInfo xsi:type="form:LabelDecorationExtInfo">
-        <horizontalAlign>Left</horizontalAlign>
-      </extInfo>
-    </extendedTooltip>
-    <contextMenu>
-      <name>ДатаКонтекстноеМеню</name>
-      <id>5</id>
-      <autoFill>true</autoFill>
-    </contextMenu>
     <type>InputField</type>
-    <editMode>EnterOnInput</editMode>
-    <showInHeader>true</showInHeader>
-    <headerHorizontalAlign>Left</headerHorizontalAlign>
-    <showInFooter>true</showInFooter>
     <extInfo xsi:type="form:InputFieldExtInfo">
-      <autoMaxWidth>true</autoMaxWidth>
-      <autoMaxHeight>true</autoMaxHeight>
-      <wrap>true</wrap>
-      <extendedEditMultipleValues>true</extendedEditMultipleValues>
-      <chooseType>true</chooseType>
-      <typeDomainEnabled>true</typeDomainEnabled>
-      <textEdit>true</textEdit>
+      <width>20</width>
     </extInfo>
-  </items>
-  <items xsi:type="form:FormField">
-    <name>Год</name>
-    <id>7</id>
-    <visible>true</visible>
-    <enabled>true</enabled>
-    <userVisible>
-      <common>true</common>
-    </userVisible>
-    <dataPath xsi:type="form:DataPath">
-      <segments>Объект.Год</segments>
-    </dataPath>
-    <extendedTooltip>
-      <name>ГодРасширеннаяПодсказка</name>
-      <id>9</id>
-      <type>Label</type>
-      <autoMaxWidth>true</autoMaxWidth>
-      <autoMaxHeight>true</autoMaxHeight>
-      <extInfo xsi:type="form:LabelDecorationExtInfo">
-        <horizontalAlign>Left</horizontalAlign>
-      </extInfo>
-    </extendedTooltip>
-    <contextMenu>
-      <name>ГодКонтекстноеМеню</name>
-      <id>8</id>
-      <autoFill>true</autoFill>
-    </contextMenu>
-    <type>InputField</type>
-    <editMode>EnterOnInput</editMode>
-    <showInHeader>true</showInHeader>
-    <headerHorizontalAlign>Left</headerHorizontalAlign>
-    <showInFooter>true</showInFooter>
-    <extInfo xsi:type="form:InputFieldExtInfo">
-      <autoMaxWidth>true</autoMaxWidth>
-      <autoMaxHeight>true</autoMaxHeight>
-      <wrap>true</wrap>
-      <extendedEditMultipleValues>true</extendedEditMultipleValues>
-      <chooseType>true</chooseType>
-      <typeDomainEnabled>true</typeDomainEnabled>
-      <textEdit>true</textEdit>
-    </extInfo>
+    <handlers>
+      <event>OnChange</event>
+      <name>ВКМ_МасштабПриИзменении</name>
+    </handlers>
   </items>
   <items xsi:type="form:FormField">
     <name>ГрафикОтпусков</name>
@@ -200,13 +120,14 @@
           <headerHorizontalAlign>Left</headerHorizontalAlign>
           <showInFooter>true</showInFooter>
           <extInfo xsi:type="form:InputFieldExtInfo">
-            <width>10</width>
+            <width>30</width>
             <autoMaxHeight>true</autoMaxHeight>
             <wrap>true</wrap>
             <extendedEditMultipleValues>true</extendedEditMultipleValues>
             <chooseType>true</chooseType>
             <typeDomainEnabled>true</typeDomainEnabled>
             <textEdit>true</textEdit>
+            <autoMaxWidth>false</autoMaxWidth>
           </extInfo>
         </items>
         <autoCommandBar>
@@ -325,26 +246,32 @@
         <viewStatusLocation>None</viewStatusLocation>
         <searchControlLocation>None</searchControlLocation>
       </autoTable>
-      <width>50</width>
+      <width>100</width>
       <autoMaxWidth>true</autoMaxWidth>
-      <height>10</height>
+      <height>22</height>
       <autoMaxHeight>true</autoMaxHeight>
       <horizontalStretch>true</horizontalStretch>
       <verticalStretch>true</verticalStretch>
     </extInfo>
+    <title>
+      <key>ru</key>
+      <value>Плановые отпуска сотрудников</value>
+    </title>
+    <titleLocation>None</titleLocation>
+    <readOnly>true</readOnly>
   </items>
   <autoCommandBar>
     <name>ФормаКоманднаяПанель</name>
     <id>-1</id>
     <horizontalAlign>Left</horizontalAlign>
-    <autoFill>true</autoFill>
+    <autoFill>false</autoFill>
   </autoCommandBar>
   <handlers>
     <event>OnCreateAtServer</event>
     <name>ПриСозданииНаСервере</name>
   </handlers>
   <saveWindowSettings>true</saveWindowSettings>
-  <autoTitle>true</autoTitle>
+  <autoTitle>false</autoTitle>
   <autoUrl>true</autoUrl>
   <group>Vertical</group>
   <autoFillCheck>true</autoFillCheck>
@@ -415,4 +342,28 @@
   <extInfo xsi:type="form:DocumentFormExtInfo">
     <repostOnWrite>true</repostOnWrite>
   </extInfo>
+  <attributes>
+    <name>ВКМ_Год</name>
+    <id>601</id>
+    <valueType>None<types>Number</types>
+      <numberQualifiers>
+        <precision>4</precision>
+        <scale>0</scale>
+      </numberQualifiers>
+    </valueType>
+  </attributes>
+  <attributes>
+    <name>ВКМ_Месяц</name>
+    <id>602</id>
+    <valueType>None<types>Number</types>
+      <numberQualifiers>
+        <precision>2</precision>
+        <scale>0</scale>
+      </numberQualifiers>
+    </valueType>
+  </attributes>
+  <title>
+    <key>ru</key>
+    <value>Анализ графика отпусков</value>
+  </title>
 </form:Form>

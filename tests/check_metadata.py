@@ -61,3 +61,24 @@ for doc, reg in [('РеализацияТоваровУслуг','ВКМ_Выс�
     root = ET.parse(index['Document.'+doc]).getroot()
     assert 'AccumulationRegister.'+reg in [n.text for n in root.findall('registerRecords')]
 print(f'PASS: {count} XML files parsed; {len(forms)} forms checked; custom dependencies, writers and vacation formatting API checked')
+
+# Every business table must display column headers. The previous generated forms
+# parsed as XML but defaulted both table and column headers to false on the platform.
+checked_tables = 0
+for path in forms:
+    root = ET.parse(path).getroot()
+    for table in root.iter('items'):
+        if table.attrib.get('{http://www.w3.org/2001/XMLSchema-instance}type') != 'form:Table':
+            continue
+        assert table.findtext('header') == 'true', (path, 'hidden table header')
+        for column in table.findall('items'):
+            if column.attrib.get('{http://www.w3.org/2001/XMLSchema-instance}type') == 'form:FormField':
+                assert column.findtext('showInHeader') == 'true', (path, column.findtext('name'), 'hidden column title')
+        checked_tables += 1
+for doc in ('ВКМ_НачислениеЗарплаты', 'ВКМ_НачислениеФиксированнойПремии'):
+    root = ET.parse(ROOT / 'Documents' / doc / 'Forms/ФормаДокумента/Form.form').getroot()
+    for table in root.findall('items'):
+        if table.attrib.get('{http://www.w3.org/2001/XMLSchema-instance}type') == 'form:Table':
+            for column in table.findall('items'):
+                assert column.findtext('title/value'), (doc, 'missing explicit caption', column.findtext('name'))
+print(f'PASS: visible headers in {checked_tables} business tables; explicit payroll/premium captions')

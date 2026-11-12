@@ -52,6 +52,11 @@
         <autoMaxHeight>true</autoMaxHeight>
         <textEdit>true</textEdit>
       </extInfo>
+      <title>
+        <key>ru</key>
+        <value>Сотрудник</value>
+      </title>
+      <showInHeader>true</showInHeader>
     </items>
     <items xsi:type="form:FormField">
       <name>СписокСотрудниковСуммаПремии</name>
@@ -66,7 +71,16 @@
         <autoMaxWidth>true</autoMaxWidth>
         <autoMaxHeight>true</autoMaxHeight>
         <textEdit>true</textEdit>
+        <format>
+          <key>ru</key>
+          <value>ЧДЦ=2;ЧН=0</value>
+        </format>
       </extInfo>
+      <title>
+        <key>ru</key>
+        <value>Сумма премии</value>
+      </title>
+      <showInHeader>true</showInHeader>
     </items>
     <items xsi:type="form:FormField">
       <name>СписокСотрудниковВКМ_НДФЛ</name>
@@ -83,6 +97,11 @@
         <autoMaxHeight>true</autoMaxHeight>
         <textEdit>true</textEdit>
       </extInfo>
+      <title>
+        <key>ru</key>
+        <value>НДФЛ</value>
+      </title>
+      <showInHeader>true</showInHeader>
     </items>
     <items xsi:type="form:FormField">
       <name>СписокСотрудниковВКМ_КВыплате</name>
@@ -99,6 +118,11 @@
         <autoMaxHeight>true</autoMaxHeight>
         <textEdit>true</textEdit>
       </extInfo>
+      <title>
+        <key>ru</key>
+        <value>К выплате</value>
+      </title>
+      <showInHeader>true</showInHeader>
     </items>
     <autoCommandBar>
       <name>СписокСотрудниковКоманднаяПанель</name>
@@ -107,6 +131,8 @@
     </autoCommandBar>
     <changeRowSet>true</changeRowSet>
     <changeRowOrder>true</changeRowOrder>
+    <header>true</header>
+    <headerHeight>2</headerHeight>
   </items>
   <autoCommandBar>
     <name>ФормаКоманднаяПанель</name>

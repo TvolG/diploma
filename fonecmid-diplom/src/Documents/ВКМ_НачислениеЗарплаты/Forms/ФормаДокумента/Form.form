@@ -29,6 +29,10 @@
       <autoMaxHeight>true</autoMaxHeight>
       <textEdit>true</textEdit>
     </extInfo>
+    <handlers>
+      <event>OnChange</event>
+      <name>ВКМ_НачисленияПриИзменении</name>
+    </handlers>
   </items>
   <items xsi:type="form:FormField">
     <name>Организация</name>
@@ -74,6 +78,48 @@
       <autoMaxHeight>true</autoMaxHeight>
       <textEdit>true</textEdit>
     </extInfo>
+    <handlers>
+      <event>OnChange</event>
+      <name>ВКМ_НачисленияПриИзменении</name>
+    </handlers>
+  </items>
+  <items xsi:type="form:FormField">
+    <name>ВКМ_ОтдельныйПериодРабот</name>
+    <id>501</id>
+    <title>
+      <key>ru</key>
+      <value>Показать период выполненных работ</value>
+    </title>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <dataPath xsi:type="form:DataPath">
+      <segments>ВКМ_ОтдельныйПериодРабот</segments>
+    </dataPath>
+    <type>CheckBoxField</type>
+    <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+    <handlers>
+      <event>OnChange</event>
+      <name>ВКМ_НастройкиТаблицыПриИзменении</name>
+    </handlers>
+  </items>
+  <items xsi:type="form:FormField">
+    <name>ВКМ_ПодробныйРасчет</name>
+    <id>502</id>
+    <title>
+      <key>ru</key>
+      <value>Показать состав начислений и дни</value>
+    </title>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <dataPath xsi:type="form:DataPath">
+      <segments>ВКМ_ПодробныйРасчет</segments>
+    </dataPath>
+    <type>CheckBoxField</type>
+    <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+    <handlers>
+      <event>OnChange</event>
+      <name>ВКМ_НастройкиТаблицыПриИзменении</name>
+    </handlers>
   </items>
   <items xsi:type="form:Table">
     <name>Начисления</name>
@@ -83,6 +129,14 @@
     <dataPath xsi:type="form:DataPath">
       <segments>Объект.Начисления</segments>
     </dataPath>
+    <autoCommandBar>
+      <name>НачисленияКоманднаяПанель</name>
+      <id>22</id>
+      <autoFill>true</autoFill>
+    </autoCommandBar>
+    <changeRowSet>true</changeRowSet>
+    <changeRowOrder>true</changeRowOrder>
+    <header>true</header>
     <items xsi:type="form:FormField">
       <name>НачисленияСотрудник</name>
       <id>7</id>
@@ -93,10 +147,16 @@
       </dataPath>
       <type>InputField</type>
       <extInfo xsi:type="form:InputFieldExtInfo">
-        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxWidth>false</autoMaxWidth>
         <autoMaxHeight>true</autoMaxHeight>
         <textEdit>true</textEdit>
+        <width>24</width>
       </extInfo>
+      <title>
+        <key>ru</key>
+        <value>Сотрудник</value>
+      </title>
+      <showInHeader>true</showInHeader>
     </items>
     <items xsi:type="form:FormField">
       <name>НачисленияВКМ_ВидНачисления</name>
@@ -108,10 +168,16 @@
       </dataPath>
       <type>InputField</type>
       <extInfo xsi:type="form:InputFieldExtInfo">
-        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxWidth>false</autoMaxWidth>
         <autoMaxHeight>true</autoMaxHeight>
         <textEdit>true</textEdit>
+        <width>22</width>
       </extInfo>
+      <title>
+        <key>ru</key>
+        <value>Вид начисления</value>
+      </title>
+      <showInHeader>true</showInHeader>
     </items>
     <items xsi:type="form:FormField">
       <name>НачисленияВКМ_ДатаНачала</name>
@@ -123,10 +189,16 @@
       </dataPath>
       <type>InputField</type>
       <extInfo xsi:type="form:InputFieldExtInfo">
-        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxWidth>false</autoMaxWidth>
         <autoMaxHeight>true</autoMaxHeight>
         <textEdit>true</textEdit>
+        <width>12</width>
       </extInfo>
+      <title>
+        <key>ru</key>
+        <value>Начало периода</value>
+      </title>
+      <showInHeader>true</showInHeader>
     </items>
     <items xsi:type="form:FormField">
       <name>НачисленияВКМ_ДатаОкончания</name>
@@ -138,136 +210,16 @@
       </dataPath>
       <type>InputField</type>
       <extInfo xsi:type="form:InputFieldExtInfo">
-        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxWidth>false</autoMaxWidth>
         <autoMaxHeight>true</autoMaxHeight>
         <textEdit>true</textEdit>
+        <width>12</width>
       </extInfo>
-    </items>
-    <items xsi:type="form:FormField">
-      <name>НачисленияВКМ_ДатаРаботНачало</name>
-      <id>11</id>
-      <visible>true</visible>
-      <enabled>true</enabled>
-      <dataPath xsi:type="form:DataPath">
-        <segments>Объект.Начисления.ВКМ_ДатаРаботНачало</segments>
-      </dataPath>
-      <type>InputField</type>
-      <extInfo xsi:type="form:InputFieldExtInfo">
-        <autoMaxWidth>true</autoMaxWidth>
-        <autoMaxHeight>true</autoMaxHeight>
-        <textEdit>true</textEdit>
-      </extInfo>
-    </items>
-    <items xsi:type="form:FormField">
-      <name>НачисленияВКМ_ДатаРаботКонец</name>
-      <id>12</id>
-      <visible>true</visible>
-      <enabled>true</enabled>
-      <dataPath xsi:type="form:DataPath">
-        <segments>Объект.Начисления.ВКМ_ДатаРаботКонец</segments>
-      </dataPath>
-      <type>InputField</type>
-      <extInfo xsi:type="form:InputFieldExtInfo">
-        <autoMaxWidth>true</autoMaxWidth>
-        <autoMaxHeight>true</autoMaxHeight>
-        <textEdit>true</textEdit>
-      </extInfo>
-    </items>
-    <items xsi:type="form:FormField">
-      <name>НачисленияОклад</name>
-      <id>13</id>
-      <visible>true</visible>
-      <enabled>true</enabled>
-      <dataPath xsi:type="form:DataPath">
-        <segments>Объект.Начисления.Оклад</segments>
-      </dataPath>
-      <type>InputField</type>
-      <readOnly>true</readOnly>
-      <extInfo xsi:type="form:InputFieldExtInfo">
-        <autoMaxWidth>true</autoMaxWidth>
-        <autoMaxHeight>true</autoMaxHeight>
-        <textEdit>true</textEdit>
-      </extInfo>
-    </items>
-    <items xsi:type="form:FormField">
-      <name>НачисленияПроцентОтРабот</name>
-      <id>14</id>
-      <visible>true</visible>
-      <enabled>true</enabled>
-      <dataPath xsi:type="form:DataPath">
-        <segments>Объект.Начисления.ПроцентОтРабот</segments>
-      </dataPath>
-      <type>InputField</type>
-      <readOnly>true</readOnly>
-      <extInfo xsi:type="form:InputFieldExtInfo">
-        <autoMaxWidth>true</autoMaxWidth>
-        <autoMaxHeight>true</autoMaxHeight>
-        <textEdit>true</textEdit>
-      </extInfo>
-    </items>
-    <items xsi:type="form:FormField">
-      <name>НачисленияВКМ_СуммаОтпускных</name>
-      <id>15</id>
-      <visible>true</visible>
-      <enabled>true</enabled>
-      <dataPath xsi:type="form:DataPath">
-        <segments>Объект.Начисления.ВКМ_СуммаОтпускных</segments>
-      </dataPath>
-      <type>InputField</type>
-      <readOnly>true</readOnly>
-      <extInfo xsi:type="form:InputFieldExtInfo">
-        <autoMaxWidth>true</autoMaxWidth>
-        <autoMaxHeight>true</autoMaxHeight>
-        <textEdit>true</textEdit>
-      </extInfo>
-    </items>
-    <items xsi:type="form:FormField">
-      <name>НачисленияВКМ_НормаДней</name>
-      <id>16</id>
-      <visible>true</visible>
-      <enabled>true</enabled>
-      <dataPath xsi:type="form:DataPath">
-        <segments>Объект.Начисления.ВКМ_НормаДней</segments>
-      </dataPath>
-      <type>InputField</type>
-      <readOnly>true</readOnly>
-      <extInfo xsi:type="form:InputFieldExtInfo">
-        <autoMaxWidth>true</autoMaxWidth>
-        <autoMaxHeight>true</autoMaxHeight>
-        <textEdit>true</textEdit>
-      </extInfo>
-    </items>
-    <items xsi:type="form:FormField">
-      <name>НачисленияВКМ_ФактДней</name>
-      <id>17</id>
-      <visible>true</visible>
-      <enabled>true</enabled>
-      <dataPath xsi:type="form:DataPath">
-        <segments>Объект.Начисления.ВКМ_ФактДней</segments>
-      </dataPath>
-      <type>InputField</type>
-      <readOnly>true</readOnly>
-      <extInfo xsi:type="form:InputFieldExtInfo">
-        <autoMaxWidth>true</autoMaxWidth>
-        <autoMaxHeight>true</autoMaxHeight>
-        <textEdit>true</textEdit>
-      </extInfo>
-    </items>
-    <items xsi:type="form:FormField">
-      <name>НачисленияКоличествоДнейОтпуска</name>
-      <id>18</id>
-      <visible>true</visible>
-      <enabled>true</enabled>
-      <dataPath xsi:type="form:DataPath">
-        <segments>Объект.Начисления.КоличествоДнейОтпуска</segments>
-      </dataPath>
-      <type>InputField</type>
-      <readOnly>true</readOnly>
-      <extInfo xsi:type="form:InputFieldExtInfo">
-        <autoMaxWidth>true</autoMaxWidth>
-        <autoMaxHeight>true</autoMaxHeight>
-        <textEdit>true</textEdit>
-      </extInfo>
+      <title>
+        <key>ru</key>
+        <value>Окончание периода</value>
+      </title>
+      <showInHeader>true</showInHeader>
     </items>
     <items xsi:type="form:FormField">
       <name>НачисленияИтого</name>
@@ -280,10 +232,20 @@
       <type>InputField</type>
       <readOnly>true</readOnly>
       <extInfo xsi:type="form:InputFieldExtInfo">
-        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxWidth>false</autoMaxWidth>
         <autoMaxHeight>true</autoMaxHeight>
         <textEdit>true</textEdit>
+        <format>
+          <key>ru</key>
+          <value>ЧДЦ=2;ЧН=0</value>
+        </format>
+        <width>12</width>
       </extInfo>
+      <title>
+        <key>ru</key>
+        <value>Начислено</value>
+      </title>
+      <showInHeader>true</showInHeader>
     </items>
     <items xsi:type="form:FormField">
       <name>НачисленияНДФЛ</name>
@@ -296,10 +258,20 @@
       <type>InputField</type>
       <readOnly>true</readOnly>
       <extInfo xsi:type="form:InputFieldExtInfo">
-        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxWidth>false</autoMaxWidth>
         <autoMaxHeight>true</autoMaxHeight>
         <textEdit>true</textEdit>
+        <format>
+          <key>ru</key>
+          <value>ЧДЦ=2;ЧН=0</value>
+        </format>
+        <width>12</width>
       </extInfo>
+      <title>
+        <key>ru</key>
+        <value>НДФЛ</value>
+      </title>
+      <showInHeader>true</showInHeader>
     </items>
     <items xsi:type="form:FormField">
       <name>НачисленияКВыплате</name>
@@ -312,18 +284,214 @@
       <type>InputField</type>
       <readOnly>true</readOnly>
       <extInfo xsi:type="form:InputFieldExtInfo">
-        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxWidth>false</autoMaxWidth>
         <autoMaxHeight>true</autoMaxHeight>
         <textEdit>true</textEdit>
+        <format>
+          <key>ru</key>
+          <value>ЧДЦ=2;ЧН=0</value>
+        </format>
+        <width>12</width>
       </extInfo>
+      <title>
+        <key>ru</key>
+        <value>К выплате</value>
+      </title>
+      <showInHeader>true</showInHeader>
     </items>
-    <autoCommandBar>
-      <name>НачисленияКоманднаяПанель</name>
-      <id>22</id>
-      <autoFill>true</autoFill>
-    </autoCommandBar>
-    <changeRowSet>true</changeRowSet>
-    <changeRowOrder>true</changeRowOrder>
+    <items xsi:type="form:FormField">
+      <name>НачисленияВКМ_ДатаРаботНачало</name>
+      <id>11</id>
+      <visible>false</visible>
+      <enabled>true</enabled>
+      <dataPath xsi:type="form:DataPath">
+        <segments>Объект.Начисления.ВКМ_ДатаРаботНачало</segments>
+      </dataPath>
+      <type>InputField</type>
+      <extInfo xsi:type="form:InputFieldExtInfo">
+        <autoMaxWidth>false</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <textEdit>true</textEdit>
+        <width>12</width>
+      </extInfo>
+      <title>
+        <key>ru</key>
+        <value>Начало периода работ</value>
+      </title>
+      <showInHeader>true</showInHeader>
+    </items>
+    <items xsi:type="form:FormField">
+      <name>НачисленияВКМ_ДатаРаботКонец</name>
+      <id>12</id>
+      <visible>false</visible>
+      <enabled>true</enabled>
+      <dataPath xsi:type="form:DataPath">
+        <segments>Объект.Начисления.ВКМ_ДатаРаботКонец</segments>
+      </dataPath>
+      <type>InputField</type>
+      <extInfo xsi:type="form:InputFieldExtInfo">
+        <autoMaxWidth>false</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <textEdit>true</textEdit>
+        <width>12</width>
+      </extInfo>
+      <title>
+        <key>ru</key>
+        <value>Окончание периода работ</value>
+      </title>
+      <showInHeader>true</showInHeader>
+    </items>
+    <items xsi:type="form:FormField">
+      <name>НачисленияОклад</name>
+      <id>13</id>
+      <visible>false</visible>
+      <enabled>true</enabled>
+      <dataPath xsi:type="form:DataPath">
+        <segments>Объект.Начисления.Оклад</segments>
+      </dataPath>
+      <type>InputField</type>
+      <readOnly>true</readOnly>
+      <extInfo xsi:type="form:InputFieldExtInfo">
+        <autoMaxWidth>false</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <textEdit>true</textEdit>
+        <format>
+          <key>ru</key>
+          <value>ЧДЦ=2;ЧН=0</value>
+        </format>
+        <width>12</width>
+      </extInfo>
+      <title>
+        <key>ru</key>
+        <value>Начислено по окладу</value>
+      </title>
+      <showInHeader>true</showInHeader>
+    </items>
+    <items xsi:type="form:FormField">
+      <name>НачисленияПроцентОтРабот</name>
+      <id>14</id>
+      <visible>false</visible>
+      <enabled>true</enabled>
+      <dataPath xsi:type="form:DataPath">
+        <segments>Объект.Начисления.ПроцентОтРабот</segments>
+      </dataPath>
+      <type>InputField</type>
+      <readOnly>true</readOnly>
+      <extInfo xsi:type="form:InputFieldExtInfo">
+        <autoMaxWidth>false</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <textEdit>true</textEdit>
+        <format>
+          <key>ru</key>
+          <value>ЧДЦ=2;ЧН=0</value>
+        </format>
+        <width>12</width>
+      </extInfo>
+      <title>
+        <key>ru</key>
+        <value>Вознаграждение за работы</value>
+      </title>
+      <showInHeader>true</showInHeader>
+    </items>
+    <items xsi:type="form:FormField">
+      <name>НачисленияВКМ_СуммаОтпускных</name>
+      <id>15</id>
+      <visible>false</visible>
+      <enabled>true</enabled>
+      <dataPath xsi:type="form:DataPath">
+        <segments>Объект.Начисления.ВКМ_СуммаОтпускных</segments>
+      </dataPath>
+      <type>InputField</type>
+      <readOnly>true</readOnly>
+      <extInfo xsi:type="form:InputFieldExtInfo">
+        <autoMaxWidth>false</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <textEdit>true</textEdit>
+        <format>
+          <key>ru</key>
+          <value>ЧДЦ=2;ЧН=0</value>
+        </format>
+        <width>12</width>
+      </extInfo>
+      <title>
+        <key>ru</key>
+        <value>Отпускные</value>
+      </title>
+      <showInHeader>true</showInHeader>
+    </items>
+    <items xsi:type="form:FormField">
+      <name>НачисленияКоличествоДнейОтпуска</name>
+      <id>18</id>
+      <visible>false</visible>
+      <enabled>true</enabled>
+      <dataPath xsi:type="form:DataPath">
+        <segments>Объект.Начисления.КоличествоДнейОтпуска</segments>
+      </dataPath>
+      <type>InputField</type>
+      <readOnly>true</readOnly>
+      <extInfo xsi:type="form:InputFieldExtInfo">
+        <autoMaxWidth>false</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <textEdit>true</textEdit>
+        <width>12</width>
+      </extInfo>
+      <title>
+        <key>ru</key>
+        <value>Количество дней отпуска</value>
+      </title>
+      <showInHeader>true</showInHeader>
+    </items>
+    <items xsi:type="form:FormField">
+      <name>НачисленияВКМ_НормаДней</name>
+      <id>16</id>
+      <visible>false</visible>
+      <enabled>true</enabled>
+      <dataPath xsi:type="form:DataPath">
+        <segments>Объект.Начисления.ВКМ_НормаДней</segments>
+      </dataPath>
+      <type>InputField</type>
+      <readOnly>true</readOnly>
+      <extInfo xsi:type="form:InputFieldExtInfo">
+        <autoMaxWidth>false</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <textEdit>true</textEdit>
+        <width>12</width>
+      </extInfo>
+      <title>
+        <key>ru</key>
+        <value>Рабочих дней по норме</value>
+      </title>
+      <showInHeader>true</showInHeader>
+    </items>
+    <items xsi:type="form:FormField">
+      <name>НачисленияВКМ_ФактДней</name>
+      <id>17</id>
+      <visible>false</visible>
+      <enabled>true</enabled>
+      <dataPath xsi:type="form:DataPath">
+        <segments>Объект.Начисления.ВКМ_ФактДней</segments>
+      </dataPath>
+      <type>InputField</type>
+      <readOnly>true</readOnly>
+      <extInfo xsi:type="form:InputFieldExtInfo">
+        <autoMaxWidth>false</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <textEdit>true</textEdit>
+        <width>12</width>
+      </extInfo>
+      <title>
+        <key>ru</key>
+        <value>Фактически рабочих дней</value>
+      </title>
+      <showInHeader>true</showInHeader>
+    </items>
+    <horizontalStretch>true</horizontalStretch>
+    <verticalStretch>true</verticalStretch>
+    <handlers>
+      <event>OnChange</event>
+      <name>ВКМ_НачисленияПриИзменении</name>
+    </handlers>
+    <headerHeight>2</headerHeight>
   </items>
   <autoCommandBar>
     <name>ФормаКоманднаяПанель</name>
@@ -367,6 +535,14 @@
       <visible>true</visible>
       <enabled>true</enabled>
       <commandName>Form.Command.ВКМ_ДвиженияВКМ_ОстаткиОтпусковСотрудников</commandName>
+      <placementArea>UserCmds</placementArea>
+    </items>
+    <items xsi:type="form:Button">
+      <name>ВКМ_Рассчитать</name>
+      <id>503</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <commandName>Form.Command.ВКМ_Рассчитать</commandName>
       <placementArea>UserCmds</placementArea>
     </items>
   </autoCommandBar>
@@ -473,4 +649,34 @@
   <extInfo xsi:type="form:DocumentFormExtInfo">
     <repostOnWrite>true</repostOnWrite>
   </extInfo>
+  <attributes>
+    <name>ВКМ_ОтдельныйПериодРабот</name>
+    <id>501</id>
+    <valueType>None<types>Boolean</types>
+    </valueType>
+  </attributes>
+  <attributes>
+    <name>ВКМ_ПодробныйРасчет</name>
+    <id>502</id>
+    <valueType>None<types>Boolean</types>
+    </valueType>
+  </attributes>
+  <formCommands>
+    <name>ВКМ_Рассчитать</name>
+    <title>
+      <key>ru</key>
+      <value>Рассчитать</value>
+    </title>
+    <id>501</id>
+    <use>None<common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>None<name>ВКМ_Рассчитать</name>
+      </handler>
+    </action>
+  </formCommands>
+  <handlers>
+    <event>OnCreateAtServer</event>
+    <name>ВКМ_ПриСозданииНаСервере</name>
+  </handlers>
 </form:Form>

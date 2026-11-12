@@ -8,7 +8,7 @@
     <name>НаборДанных</name>
     <field xsi:type="DataSetFieldField">
       <dataPath>Специалист</dataPath>
-      <field>Специалист</field>
+      <field>Специалист<appearance><dcscor:item xsi:type="dcsset:SettingsParameterValue"><dcscor:parameter>Формат</dcscor:parameter><dcscor:value xsi:type="v8:LocalStringType"><v8:item><v8:lang>ru</v8:lang><v8:content>ЧДЦ=2;ЧН=0</v8:content></v8:item></dcscor:value></dcscor:item></appearance></field>
       <title xsi:type="v8:LocalStringType">
         <v8:item>
           <v8:lang>ru</v8:lang>
@@ -21,30 +21,24 @@
     </field>
     <field xsi:type="DataSetFieldField">
       <dataPath>Часов</dataPath>
-      <field>Часов</field>
+      <field>Часов<appearance><dcscor:item xsi:type="dcsset:SettingsParameterValue"><dcscor:parameter>Формат</dcscor:parameter><dcscor:value xsi:type="v8:LocalStringType"><v8:item><v8:lang>ru</v8:lang><v8:content>ЧДЦ=2;ЧН=0</v8:content></v8:item></dcscor:value></dcscor:item></appearance></field>
       <title xsi:type="v8:LocalStringType">
-        <v8:item>
-          <v8:lang>ru</v8:lang>
-          <v8:content>Часов к оплате</v8:content>
-        </v8:item>
-      </title>
-    </field>
+        <v8:item><v8:lang>ru</v8:lang><v8:content>Часов к оплате</v8:content></v8:item></title>
+    <appearance><dcscor:item xsi:type="dcsset:SettingsParameterValue"><dcscor:parameter>Формат</dcscor:parameter><dcscor:value xsi:type="v8:LocalStringType"><v8:item><v8:lang>ru</v8:lang><v8:content>ЧДЦ=2;ЧН=0</v8:content></v8:item></dcscor:value></dcscor:item></appearance></field>
     <field xsi:type="DataSetFieldField">
       <dataPath>СуммаНачисления</dataPath>
-      <field>СуммаНачисления</field>
+      <field>СуммаНачисления<appearance><dcscor:item xsi:type="dcsset:SettingsParameterValue"><dcscor:parameter>Формат</dcscor:parameter><dcscor:value xsi:type="v8:LocalStringType"><v8:item><v8:lang>ru</v8:lang><v8:content>ЧДЦ=2;ЧН=0</v8:content></v8:item></dcscor:value></dcscor:item></appearance></field>
       <title xsi:type="v8:LocalStringType">
-        <v8:item>
-          <v8:lang>ru</v8:lang>
-          <v8:content>Вознаграждение за работы</v8:content>
-        </v8:item>
-      </title>
-    </field>
+        <v8:item><v8:lang>ru</v8:lang><v8:content>Сумма начисления</v8:content></v8:item></title>
+    <appearance><dcscor:item xsi:type="dcsset:SettingsParameterValue"><dcscor:parameter>Формат</dcscor:parameter><dcscor:value xsi:type="v8:LocalStringType"><v8:item><v8:lang>ru</v8:lang><v8:content>ЧДЦ=2;ЧН=0</v8:content></v8:item></dcscor:value></dcscor:item></appearance></field>
     <dataSource>ИсточникДанных</dataSource>
     <query>ВЫБРАТЬ
  Работы.ВКМ_Сотрудник КАК Специалист,
- Работы.ВКМ_ЧасовКОплатеОборот КАК Часов,
- Работы.ВКМ_СуммаКОплатеОборот КАК СуммаНачисления
-ИЗ РегистрНакопления.ВКМ_ВыполненныеСотрудникомРаботы.Обороты(&amp;НачалоПериода, &amp;КонецПериода, , ) КАК Работы</query>
+ СУММА(Работы.ВКМ_ЧасовКОплатеОборот) КАК Часов,
+ СУММА(Работы.ВКМ_СуммаКОплатеОборот) КАК СуммаНачисления
+ИЗ РегистрНакопления.ВКМ_ВыполненныеСотрудникомРаботы.Обороты(&amp;НачалоПериода, &amp;КонецПериода, ,
+ &amp;Специалист = ЗНАЧЕНИЕ(Справочник.Пользователи.ПустаяСсылка) ИЛИ ВКМ_Сотрудник = &amp;Специалист) КАК Работы
+СГРУППИРОВАТЬ ПО Работы.ВКМ_Сотрудник</query>
   </dataSet>
   <totalField>
     <dataPath>Часов</dataPath>
@@ -93,7 +87,7 @@
   </parameter>
   <settingsVariant>
     <dcsset:name>Основной</dcsset:name>
-    <dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
+    <dcsset:presentation xsi:type="xs:string">Выработка специалистов</dcsset:presentation>
     <dcsset:settings>
       <dcsset:dataParameters>
         <dcscor:item xsi:type="dcsset:SettingsParameterValue">
@@ -104,16 +98,7 @@
           </dcscor:value>
           <dcsset:userSettingID>25a77d43-7932-4c06-83b0-01eebcde36ee</dcsset:userSettingID>
         </dcscor:item>
-      </dcsset:dataParameters>
-      <dcsset:filter>
-        <dcsset:item xsi:type="dcsset:FilterItemComparison">
-          <dcsset:use>false</dcsset:use>
-          <dcsset:left xsi:type="dcscor:Field">Специалист</dcsset:left>
-          <dcsset:comparisonType>Equal</dcsset:comparisonType>
-          <dcsset:right xsi:type="cfg:CatalogRef.Пользователи">00000000-0000-0000-0000-000000000000</dcsset:right>
-          <dcsset:userSettingID>cca8ddd9-4cb4-49f8-88b2-817931ed21fa</dcsset:userSettingID>
-        </dcsset:item>
-      </dcsset:filter>
+      <dcscor:item xsi:type="dcsset:SettingsParameterValue"><dcscor:use>true</dcscor:use><dcscor:parameter>Специалист</dcscor:parameter><dcscor:value xsi:type="cfg:CatalogRef.Пользователи">00000000-0000-0000-0000-000000000000</dcscor:value><dcsset:userSettingID>82867481-6cc1-4c1a-8c6c-bf441883cdbb</dcsset:userSettingID></dcscor:item></dcsset:dataParameters>
       <dcsset:item xsi:type="dcsset:StructureItemGroup">
         <dcsset:selection>
           <dcsset:item xsi:type="dcsset:SelectedItemField">
@@ -127,6 +112,6 @@
           </dcsset:item>
         </dcsset:selection>
       </dcsset:item>
-    </dcsset:settings>
+    <dcsset:outputParameters><dcscor:item xsi:type="dcsset:SettingsParameterValue"><dcscor:parameter>Заголовок</dcscor:parameter><dcscor:value xsi:type="v8:LocalStringType"><v8:item><v8:lang>ru</v8:lang><v8:content>Выработка специалистов</v8:content></v8:item></dcscor:value></dcscor:item></dcsset:outputParameters></dcsset:settings>
   </settingsVariant>
-</DataCompositionSchema>
+<parameter><name>Специалист</name><title xsi:type="v8:LocalStringType"><v8:item><v8:lang>ru</v8:lang><v8:content>Специалист (пусто — все)</v8:content></v8:item></title><valueType><v8:Type>cfg:CatalogRef.Пользователи</v8:Type></valueType><value xsi:type="cfg:CatalogRef.Пользователи">00000000-0000-0000-0000-000000000000</value><use>Always</use></parameter></DataCompositionSchema>

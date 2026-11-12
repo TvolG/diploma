@@ -1,0 +1,84 @@
+{
+  "date": "2026-11-12",
+  "baseCommit": "244a03a9698c05ff71352bc9995c0ceab50ef0d5",
+  "platformAvailable": false,
+  "xmlFilesParsed": 1898,
+  "formsChecked": 14,
+  "businessTablesHeadersChecked": 11,
+  "sqliteFixtureTestsPassed": 6,
+  "bslLanguageServer": "1.0.7",
+  "analyzedFiles": 35,
+  "ParseError": 0,
+  "QueryParseError": 0,
+  "diagnosticsBySeverity": {
+    "Information": 182,
+    "Warning": 62,
+    "Hint": 60,
+    "Error": 6
+  },
+  "diagnosticsByCode": {
+    "LineLength": 68,
+    "UnusedLocalVariable": 7,
+    "CognitiveComplexity": 7,
+    "ConsecutiveEmptyLines": 15,
+    "UsingServiceTag": 1,
+    "SpaceAtStartComment": 7,
+    "Typo": 24,
+    "MissingParameterDescription": 17,
+    "DuplicateStringLiteral": 17,
+    "TransferringParametersBetweenClientAndServer": 3,
+    "MagicNumber": 60,
+    "MissingSpace": 2,
+    "DeprecatedMessage": 22,
+    "IfConditionComplexity": 5,
+    "NestedConstructorsInStructureDeclaration": 7,
+    "IfElseIfEndsWithElse": 4,
+    "NestedFunctionInParameters": 2,
+    "StyleElementConstructors": 3,
+    "IsInRoleMethod": 10,
+    "MissingReturnedValueDescription": 4,
+    "CreateQueryInCycle": 2,
+    "AssignAliasFieldsInQuery": 1,
+    "NumberOfValuesInStructureConstructor": 1,
+    "DeprecatedCurrentDate": 1,
+    "PublicMethodsDescription": 11,
+    "NestedStatements": 1,
+    "UsingFindElementByString": 5,
+    "CyclomaticComplexity": 2,
+    "NestedTernaryOperator": 1
+  },
+  "errorLevelDiagnostics": [
+    {
+      "file": "fonecmid-diplom/src/Documents/ВКМ_ГрафикОтпусков/Forms/АнализГрафика/Module.bsl",
+      "code": "StyleElementConstructors",
+      "line": 24
+    },
+    {
+      "file": "fonecmid-diplom/src/Documents/ВКМ_ГрафикОтпусков/Forms/ФормаДокумента/Module.bsl",
+      "code": "StyleElementConstructors",
+      "line": 30
+    },
+    {
+      "file": "fonecmid-diplom/src/Documents/ВКМ_ГрафикОтпусков/Forms/ФормаДокумента/Module.bsl",
+      "code": "StyleElementConstructors",
+      "line": 31
+    },
+    {
+      "file": "fonecmid-diplom/src/DataProcessors/ВКМ_МассовоеСозданиеАктов/ManagerModule.bsl",
+      "code": "CreateQueryInCycle",
+      "line": 30
+    },
+    {
+      "file": "fonecmid-diplom/src/DataProcessors/ВКМ_МассовоеСозданиеАктов/Forms/Форма/Module.bsl",
+      "code": "DeprecatedCurrentDate",
+      "line": 5
+    },
+    {
+      "file": "fonecmid-diplom/src/CommonModules/ВКМ_ДемонстрационныеДанные/Module.bsl",
+      "code": "CreateQueryInCycle",
+      "line": 215
+    }
+  ],
+  "nativeChecksRun": false,
+  "note": "Syntax and structural checks plus SQLite fixtures only. Native 1C/EDT form rendering, calculation, persistence and DCS have not been executed."
+}

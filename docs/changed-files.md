@@ -1,6 +1,6 @@
 # Изменённые файлы
 
-Сравнение текущей ветки с исходным коммитом `990140a8572904feb4075c64a97ea70eb35d8bd5`. Переименования показаны старым и новым путями; UUID корневых метаданных сохранены (18 проверенных объектов).
+Сравнение текущей ветки с исходным коммитом `990140a8572904feb4075c64a97ea70eb35d8bd5`. Переименования показаны старым и новым путями; UUID корневых метаданных сохранены. Повторные замечания описаны в [payroll-form-review.md](payroll-form-review.md).
 
 | Статус | Файл |
 |---|---|
@@ -8,28 +8,21 @@
 | изменён | `README.md` |
 | добавлен | `docs/changed-files.md` |
 | добавлен | `docs/checks.md` |
+| добавлен | `docs/payroll-form-review.md` |
 | добавлен | `fonecmid-diplom/src/AccumulationRegisters/ВКМ_ВзаиморасчетыССотрудниками/ВКМ_ВзаиморасчетыССотрудниками.mdo` |
 | изменён | `fonecmid-diplom/src/AccumulationRegisters/ВКМ_ВыполненныеКлиентуРаботы/ВКМ_ВыполненныеКлиентуРаботы.mdo` |
 | добавлен | `fonecmid-diplom/src/AccumulationRegisters/ВКМ_ВыполненныеСотрудникомРаботы/ВКМ_ВыполненныеСотрудникомРаботы.mdo` |
 | добавлен | `fonecmid-diplom/src/AccumulationRegisters/ВКМ_ВыставленныеАкты/ВКМ_ВыставленныеАкты.mdo` |
 | добавлен | `fonecmid-diplom/src/AccumulationRegisters/ВКМ_ОстаткиОтпусковСотрудников/ВКМ_ОстаткиОтпусковСотрудников.mdo` |
-| удалён/переименован | `fonecmid-diplom/src/AccumulationRegisters/ВзаиморасчетыССотрудниками/ВзаиморасчетыССотрудниками.mdo` |
-| удалён/переименован | `fonecmid-diplom/src/AccumulationRegisters/ОстаткиОтпусковСотрудников/ОстаткиОтпусковСотрудников.mdo` |
 | добавлен | `fonecmid-diplom/src/CalculationRegisters/ВКМ_ДополнительныеНачисления/ВКМ_ДополнительныеНачисления.mdo` |
 | добавлен | `fonecmid-diplom/src/CalculationRegisters/ВКМ_ОсновныеНачисления/ВКМ_ОсновныеНачисления.mdo` |
 | добавлен | `fonecmid-diplom/src/CalculationRegisters/ВКМ_Удержания/ВКМ_Удержания.mdo` |
-| удалён/переименован | `fonecmid-diplom/src/CalculationRegisters/ДополнительныеНачисления/ДополнительныеНачисления.mdo` |
-| удалён/переименован | `fonecmid-diplom/src/CalculationRegisters/ОсновныеНачисления/ОсновныеНачисления.mdo` |
-| удалён/переименован | `fonecmid-diplom/src/CalculationRegisters/Удержания/Удержания.mdo` |
 | изменён | `fonecmid-diplom/src/Catalogs/ДоговорыКонтрагентов/Forms/ФормаЭлемента/Form.form` |
 | изменён | `fonecmid-diplom/src/Catalogs/ДоговорыКонтрагентов/Forms/ФормаЭлемента/Module.bsl` |
 | добавлен | `fonecmid-diplom/src/Catalogs/ДоговорыКонтрагентов/ObjectModule.bsl` |
 | добавлен | `fonecmid-diplom/src/ChartsOfCalculationTypes/ВКМ_ДополнительныеНачисления/ВКМ_ДополнительныеНачисления.mdo` |
 | добавлен | `fonecmid-diplom/src/ChartsOfCalculationTypes/ВКМ_ОсновныеНачисления/ВКМ_ОсновныеНачисления.mdo` |
 | добавлен | `fonecmid-diplom/src/ChartsOfCalculationTypes/ВКМ_Удержания/ВКМ_Удержания.mdo` |
-| удалён/переименован | `fonecmid-diplom/src/ChartsOfCalculationTypes/ДополнительныеНачисления/ДополнительныеНачисления.mdo` |
-| удалён/переименован | `fonecmid-diplom/src/ChartsOfCalculationTypes/ОсновныеНачисления/ОсновныеНачисления.mdo` |
-| удалён/переименован | `fonecmid-diplom/src/ChartsOfCalculationTypes/Удержания/Удержания.mdo` |
 | добавлен | `fonecmid-diplom/src/CommonModules/ВКМ_ДемонстрационныеДанные/Module.bsl` |
 | добавлен | `fonecmid-diplom/src/CommonModules/ВКМ_ДемонстрационныеДанные/ВКМ_ДемонстрационныеДанные.mdo` |
 | добавлен | `fonecmid-diplom/src/CommonModules/ВКМ_НачальнаяНастройка/Module.bsl` |
@@ -43,8 +36,6 @@
 | добавлен | `fonecmid-diplom/src/CommonTemplates/ВКМ_ДемоЛистУчета/ВКМ_ДемоЛистУчета.mdo` |
 | добавлен | `fonecmid-diplom/src/CommonTemplates/ВКМ_МакетАктаОбОказанныхУслугах/Template.mxlx` |
 | добавлен | `fonecmid-diplom/src/CommonTemplates/ВКМ_МакетАктаОбОказанныхУслугах/ВКМ_МакетАктаОбОказанныхУслугах.mdo` |
-| удалён/переименован | `fonecmid-diplom/src/CommonTemplates/МакетАктаОбОказанныхУслугах/Template.mxlx` |
-| удалён/переименован | `fonecmid-diplom/src/CommonTemplates/МакетАктаОбОказанныхУслугах/МакетАктаОбОказанныхУслугах.mdo` |
 | изменён | `fonecmid-diplom/src/Configuration/CommandInterface.cmi` |
 | изменён | `fonecmid-diplom/src/Configuration/Configuration.mdo` |
 | изменён | `fonecmid-diplom/src/DataProcessors/ВКМ_МассовоеСозданиеАктов/Forms/Форма/Module.bsl` |
@@ -79,19 +70,11 @@
 | добавлен | `fonecmid-diplom/src/Documents/ВКМ_ОбслуживаниеКлиента/Forms/ФормаСписка/Module.bsl` |
 | изменён | `fonecmid-diplom/src/Documents/ВКМ_ОбслуживаниеКлиента/ObjectModule.bsl` |
 | изменён | `fonecmid-diplom/src/Documents/ВКМ_ОбслуживаниеКлиента/ВКМ_ОбслуживаниеКлиента.mdo` |
-| удалён/переименован | `fonecmid-diplom/src/Documents/ВыплатаЗарплаты/Forms/ФормаДокумента/Form.form` |
-| удалён/переименован | `fonecmid-diplom/src/Documents/ВыплатаЗарплаты/Forms/ФормаДокумента/Module.bsl` |
 | удалён/переименован | `fonecmid-diplom/src/Documents/ВыплатаЗарплаты/ObjectModule.bsl` |
-| удалён/переименован | `fonecmid-diplom/src/Documents/ВыплатаЗарплаты/ВыплатаЗарплаты.mdo` |
-| удалён/переименован | `fonecmid-diplom/src/Documents/ГрафикОтпусков/Forms/АнализГрафика/Attributes/ГрафикОтпусков/ExtInfo/GanttChart.chart` |
-| удалён/переименован | `fonecmid-diplom/src/Documents/ГрафикОтпусков/Forms/АнализГрафика/Form.form` |
 | удалён/переименован | `fonecmid-diplom/src/Documents/ГрафикОтпусков/Forms/АнализГрафика/Module.bsl` |
-| удалён/переименован | `fonecmid-diplom/src/Documents/ГрафикОтпусков/Forms/ФормаДокумента/Form.form` |
 | удалён/переименован | `fonecmid-diplom/src/Documents/ГрафикОтпусков/Forms/ФормаДокумента/Module.bsl` |
 | удалён/переименован | `fonecmid-diplom/src/Documents/ГрафикОтпусков/ObjectModule.bsl` |
-| удалён/переименован | `fonecmid-diplom/src/Documents/ГрафикОтпусков/ГрафикОтпусков.mdo` |
 | удалён/переименован | `fonecmid-diplom/src/Documents/НачислениеФиксированнойПремии/ObjectModule.bsl` |
-| удалён/переименован | `fonecmid-diplom/src/Documents/НачислениеФиксированнойПремии/НачислениеФиксированнойПремии.mdo` |
 | удалён/переименован | `fonecmid-diplom/src/Documents/РеализацияТоваровУслуг/Commands/Печать/CommandModule.bsl` |
 | изменён | `fonecmid-diplom/src/Documents/РеализацияТоваровУслуг/Forms/ФормаДокумента/Form.form` |
 | изменён | `fonecmid-diplom/src/Documents/РеализацияТоваровУслуг/Forms/ФормаДокумента/Module.bsl` |
@@ -100,13 +83,11 @@
 | удалён/переименован | `fonecmid-diplom/src/Documents/РеализацияТоваровУслуг/Templates/Печать/Template.mxlx` |
 | изменён | `fonecmid-diplom/src/Documents/РеализацияТоваровУслуг/РеализацияТоваровУслуг.mdo` |
 | добавлен | `fonecmid-diplom/src/Enums/ВКМ_Периодичность/ВКМ_Периодичность.mdo` |
-| удалён/переименован | `fonecmid-diplom/src/Enums/Периодичность/Периодичность.mdo` |
 | добавлен | `fonecmid-diplom/src/InformationRegisters/ВКМ_КалендарьРаботы/RecordSetModule.bsl` |
 | добавлен | `fonecmid-diplom/src/InformationRegisters/ВКМ_КалендарьРаботы/ВКМ_КалендарьРаботы.mdo` |
 | добавлен | `fonecmid-diplom/src/InformationRegisters/ВКМ_СостояниеДемоДанных/ВКМ_СостояниеДемоДанных.mdo` |
 | добавлен | `fonecmid-diplom/src/InformationRegisters/ВКМ_УсловияОплатыСотрудников/RecordSetModule.bsl` |
 | добавлен | `fonecmid-diplom/src/InformationRegisters/ВКМ_УсловияОплатыСотрудников/ВКМ_УсловияОплатыСотрудников.mdo` |
-| удалён/переименован | `fonecmid-diplom/src/InformationRegisters/УсловияОплатыСотрудников/УсловияОплатыСотрудников.mdo` |
 | изменён | `fonecmid-diplom/src/Reports/ВКМ_АнализАктов/ObjectModule.bsl` |
 | изменён | `fonecmid-diplom/src/Reports/ВКМ_АнализАктов/Templates/ОсновнаяСхемаКомпоновкиДанных/Template.dcs` |
 | изменён | `fonecmid-diplom/src/Reports/ВКМ_АнализАктов/ВКМ_АнализАктов.mdo` |
@@ -118,10 +99,8 @@
 | добавлен | `fonecmid-diplom/src/Reports/ВКМ_РасчётыССотрудниками/Templates/ОсновнаяСхемаКомпоновкиДанных/Template.dcs` |
 | добавлен | `fonecmid-diplom/src/Reports/ВКМ_РасчётыССотрудниками/ВКМ_РасчётыССотрудниками.mdo` |
 | удалён/переименован | `fonecmid-diplom/src/Reports/РасчётыССотрудниками/Templates/ОсновнаяСхемаКомпоновкиДанных/Template.dcs` |
-| удалён/переименован | `fonecmid-diplom/src/Reports/РасчётыССотрудниками/РасчётыССотрудниками.mdo` |
 | изменён | `fonecmid-diplom/src/Roles/АдминистраторСистемы/Rights.rights` |
 | удалён/переименован | `fonecmid-diplom/src/Roles/Бухгалтер/Rights.rights` |
-| удалён/переименован | `fonecmid-diplom/src/Roles/Бухгалтер/Бухгалтер.mdo` |
 | добавлен | `fonecmid-diplom/src/Roles/ВКМ_Бухгалтер/Rights.rights` |
 | добавлен | `fonecmid-diplom/src/Roles/ВКМ_Бухгалтер/ВКМ_Бухгалтер.mdo` |
 | добавлен | `fonecmid-diplom/src/Roles/ВКМ_КадровикРасчетчик/Rights.rights` |
@@ -136,12 +115,10 @@
 | добавлен | `fonecmid-diplom/src/Roles/ВКМ_Специалист/ВКМ_Специалист.mdo` |
 | изменён | `fonecmid-diplom/src/Roles/ПолныеПрава/Rights.rights` |
 | удалён/переименован | `fonecmid-diplom/src/Roles/Специалист/Rights.rights` |
-| удалён/переименован | `fonecmid-diplom/src/Roles/Специалист/Специалист.mdo` |
 | добавлен | `fonecmid-diplom/src/Subsystems/ВКМ_ДобавленныеОбъекты/ВКМ_ДобавленныеОбъекты.mdo` |
 | добавлен | `fonecmid-diplom/src/Subsystems/ВКМ_ЗарплатаИОтпуска/ВКМ_ЗарплатаИОтпуска.mdo` |
 | добавлен | `fonecmid-diplom/src/Subsystems/ВКМ_ОбслуживаниеКлиентов/ВКМ_ОбслуживаниеКлиентов.mdo` |
 | изменён | `fonecmid-diplom/src/Subsystems/Деньги/Деньги.mdo` |
-| удалён/переименован | `fonecmid-diplom/src/Subsystems/ОбслуживаниеКлиентов/ОбслуживаниеКлиентов.mdo` |
 | добавлен | `scripts/export-checked-demo.ps1` |
 | добавлен | `tasks/requirements-review.md` |
 | добавлен | `tasks/screenshot-fixes-review.md` |
@@ -151,5 +128,7 @@
 | добавлен | `tests/fixtures/time-sheet.png` |
 | добавлен | `tests/metadata-renames.json` |
 | добавлен | `tests/offline-results.json` |
+| добавлен | `tests/payroll-review-results.json` |
 | добавлен | `tests/profile-ids.json` |
 | добавлен | `tests/test_act_report.py` |
+| добавлен | `tests/test_payroll_reports.py` |
