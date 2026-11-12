@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<mdclass:InformationRegister xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" uuid="48097577-7440-42ac-b7d7-e0d5b75c2868">
+  <producedTypes>
+    <selectionType typeId="2bc32d2c-a0c8-44f5-9d50-c07bd06322b7" valueTypeId="e9e201b7-9491-4f46-b70e-dd87ab6aae8f"/>
+    <listType typeId="62787b4a-9eea-444a-9fdf-59b5d031c087" valueTypeId="cb3ac174-3cd3-4b4b-b69f-05311f52fdc5"/>
+    <managerType typeId="88589253-f8a4-4125-a3aa-21d604c2691e" valueTypeId="f9ce125a-266d-43c6-99e2-08ead952ae9c"/>
+    <recordSetType typeId="261fd3f6-a1f0-4f4f-b437-a7c7f1a26e17" valueTypeId="f36c179d-26d1-4a62-9638-a1bf5b1f6873"/>
+    <recordKeyType typeId="eb5cd39b-b823-43fc-b546-4ff53e4ec3ff" valueTypeId="fd2ec8ca-5d20-4695-a5e6-8cc7622b650e"/>
+    <recordType typeId="ed102bc1-fcce-4474-8881-c68405e3c9c4" valueTypeId="99bba598-6a47-4758-8672-c3086641738a"/>
+    <recordManagerType typeId="c8c84ef3-d97d-4d09-9229-e80ceb183b48" valueTypeId="93f16075-274b-4d04-aaf4-bbbd7a2e85ee"/>
+  </producedTypes>
+  <name>ВКМ_КалендарьРаботы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Календарь работы</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InList</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="c5e4f168-45a8-43cb-8c71-0207b5063de9">
+    <name>ВКМ_Дата</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </dimensions>
+  <resources uuid="de088a67-072e-4e57-b007-c5a7c090b3f5">
+    <name>ВКМ_РабочийДень</name>
+    <synonym>
+      <key>ru</key>
+      <value>Рабочий день (0 или 1)</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>1</precision>
+        <scale>0</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="b2bb0815-af4d-42a3-b1cc-79e0f1cddbc5">
+    <name>ВКМ_КалендарныйДень</name>
+    <synonym>
+      <key>ru</key>
+      <value>Календарный день</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>1</precision>
+        <scale>0</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </resources>
+</mdclass:InformationRegister>

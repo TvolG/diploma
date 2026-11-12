@@ -1,0 +1,78 @@
+{
+  "date": "2026-11-12",
+  "platformAvailable": false,
+  "xmlFilesParsed": 1898,
+  "formsChecked": 14,
+  "actReportFixtureTests": 3,
+  "renamedRootUUIDsPreserved": 18,
+  "bslLanguageServer": "1.0.7",
+  "analyzedFiles": 31,
+  "ParseError": 0,
+  "QueryParseError": 0,
+  "diagnosticsBySeverity": {
+    "Hint": 53,
+    "Warning": 47,
+    "Information": 176,
+    "Error": 5
+  },
+  "diagnosticsByCode": {
+    "Typo": 23,
+    "MissingParameterDescription": 14,
+    "DuplicateStringLiteral": 17,
+    "TransferringParametersBetweenClientAndServer": 3,
+    "SpaceAtStartComment": 6,
+    "LineLength": 65,
+    "ConsecutiveEmptyLines": 11,
+    "MagicNumber": 58,
+    "MissingSpace": 2,
+    "DeprecatedMessage": 22,
+    "IfConditionComplexity": 5,
+    "NestedConstructorsInStructureDeclaration": 7,
+    "CognitiveComplexity": 5,
+    "IfElseIfEndsWithElse": 4,
+    "NestedFunctionInParameters": 2,
+    "StyleElementConstructors": 3,
+    "IsInRoleMethod": 10,
+    "DeprecatedCurrentDate": 1,
+    "PublicMethodsDescription": 11,
+    "MissingReturnedValueDescription": 2,
+    "NestedStatements": 1,
+    "UsingFindElementByString": 5,
+    "CyclomaticComplexity": 2,
+    "CreateQueryInCycle": 1,
+    "NestedTernaryOperator": 1
+  },
+  "errorLevelDiagnostics": [
+    {
+      "file": "fonecmid-diplom/src/Documents/ВКМ_ГрафикОтпусков/Forms/АнализГрафика/Module.bsl",
+      "line": 22,
+      "code": "StyleElementConstructors",
+      "message": "Замените конструктор Цвет на получение элемента стиля"
+    },
+    {
+      "file": "fonecmid-diplom/src/Documents/ВКМ_ГрафикОтпусков/Forms/ФормаДокумента/Module.bsl",
+      "line": 30,
+      "code": "StyleElementConstructors",
+      "message": "Замените конструктор Цвет на получение элемента стиля"
+    },
+    {
+      "file": "fonecmid-diplom/src/Documents/ВКМ_ГрафикОтпусков/Forms/ФормаДокумента/Module.bsl",
+      "line": 31,
+      "code": "StyleElementConstructors",
+      "message": "Замените конструктор Цвет на получение элемента стиля"
+    },
+    {
+      "file": "fonecmid-diplom/src/DataProcessors/ВКМ_МассовоеСозданиеАктов/Forms/Форма/Module.bsl",
+      "line": 5,
+      "code": "DeprecatedCurrentDate",
+      "message": "Используйте \"ТекущаяДатаСеанса\" вместо устаревшего \"ТекущаяДата\""
+    },
+    {
+      "file": "fonecmid-diplom/src/CommonModules/ВКМ_ДемонстрационныеДанные/Module.bsl",
+      "line": 215,
+      "code": "CreateQueryInCycle",
+      "message": "Необходимо модифицировать запрос для поддержки множества значений и удалить цикл"
+    }
+  ],
+  "note": "Offline syntax/structure only. Remaining diagnostics include styling, deprecation and demo query-in-loop; native APIs and execution unverified."
+}

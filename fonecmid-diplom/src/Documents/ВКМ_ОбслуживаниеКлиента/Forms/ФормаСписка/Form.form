@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <form:Form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:form="http://g5.1c.ru/v8/dt/form">
   <items xsi:type="form:FormGroup">
     <name>СписокКомпоновщикНастроекПользовательскиеНастройки</name>
@@ -247,7 +247,7 @@
       <allowGettingCurrentRowURL>true</allowGettingCurrentRowURL>
       <userSettingsGroup>СписокКомпоновщикНастроекПользовательскиеНастройки</userSettingsGroup>
     </extInfo>
-  </items>
+  <handlers><event>OnActivateRow</event><name>СписокПриАктивизацииСтроки</name></handlers></items>
   <autoCommandBar>
     <name>FormCommandBar</name>
     <id>-1</id>
@@ -289,4 +289,4 @@
     <commandBar/>
   </commandInterface>
   <extInfo xsi:type="form:DynamicListFormExtInfo"/>
-</form:Form>
+<handlers><event>OnCreateAtServer</event><name>ПриСозданииНаСервере</name></handlers></form:Form>

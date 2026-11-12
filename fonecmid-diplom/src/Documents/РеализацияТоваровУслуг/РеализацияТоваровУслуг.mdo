@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="02ae4dca-90c9-4533-a8d2-45f7c925e1e1">
   <producedTypes>
     <objectType typeId="82bd555e-3925-421c-b05a-4c2e372b2689" valueTypeId="44142209-3ceb-4b08-94b4-ea77dcb68d72"/>
@@ -414,16 +414,4 @@
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
   </tabularSections>
-  <templates uuid="4222e7af-582e-453b-8c13-3e86ad69c76a">
-    <name>Печать</name>
-  </templates>
-  <commands uuid="5d2e4f78-ffae-4f3f-a550-2fb4d87e26fd">
-    <name>Печать</name>
-    <group>FormCommandBarImportant</group>
-    <commandParameterType>
-      <types>DocumentRef.РеализацияТоваровУслуг</types>
-    </commandParameterType>
-    <parameterUseMode>Multiple</parameterUseMode>
-    <representation>Auto</representation>
-  </commands>
-</mdclass:Document>
+  </mdclass:Document>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="aa54e45c-3355-4b0f-973c-d1f056a7b3b1">
   <producedTypes>
     <selectionType typeId="a52cc088-9554-4844-9ea2-c89b93babe58" valueTypeId="01ff31cc-3702-4c76-951b-dea493548f46"/>
@@ -11,7 +11,7 @@
   <name>ВКМ_ВыполненныеКлиентуРаботы</name>
   <synonym>
     <key>ru</key>
-    <value>ВКМ выполненные клиенту работы</value>
+    <value>выполненные клиенту работы</value>
   </synonym>
   <useStandardCommands>true</useStandardCommands>
   <dataLockControlMode>Managed</dataLockControlMode>

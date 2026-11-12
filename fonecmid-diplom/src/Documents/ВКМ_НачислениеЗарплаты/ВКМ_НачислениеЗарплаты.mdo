@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b8bfd40f-a674-4d34-b892-0162399ef998">
   <producedTypes>
     <objectType typeId="60465062-fafa-4e72-95d1-409b43da43bb" valueTypeId="3e4ca463-69ee-418c-bfb5-8968ac2add66"/>
@@ -10,7 +10,7 @@
   <name>ВКМ_НачислениеЗарплаты</name>
   <synonym>
     <key>ru</key>
-    <value>ВКМ начисление зарплаты</value>
+    <value>Начисление зарплаты</value>
   </synonym>
   <useStandardCommands>true</useStandardCommands>
   <inputByString>Document.ВКМ_НачислениеЗарплаты.StandardAttribute.Number</inputByString>
@@ -23,11 +23,11 @@
   <numberAllowedLength>Variable</numberAllowedLength>
   <checkUnique>true</checkUnique>
   <autonumbering>true</autonumbering>
-  <registerRecords>AccumulationRegister.ОстаткиОтпусковСотрудников</registerRecords>
-  <registerRecords>CalculationRegister.Удержания</registerRecords>
-  <registerRecords>AccumulationRegister.ВзаиморасчетыССотрудниками</registerRecords>
-  <registerRecords>CalculationRegister.ОсновныеНачисления</registerRecords>
-  <registerRecords>CalculationRegister.ДополнительныеНачисления</registerRecords>
+  <registerRecords>AccumulationRegister.ВКМ_ОстаткиОтпусковСотрудников</registerRecords>
+  <registerRecords>CalculationRegister.ВКМ_Удержания</registerRecords>
+  <registerRecords>AccumulationRegister.ВКМ_ВзаиморасчетыССотрудниками</registerRecords>
+  <registerRecords>CalculationRegister.ВКМ_ОсновныеНачисления</registerRecords>
+  <registerRecords>CalculationRegister.ВКМ_ДополнительныеНачисления</registerRecords>
   <defaultObjectForm>Document.ВКМ_НачислениеЗарплаты.Form.ФормаДокумента</defaultObjectForm>
   <forms uuid="9c48fa75-5bbd-4aa8-b8c7-67b935f6f81a">
     <name>ФормаДокумента</name>
@@ -111,7 +111,7 @@
       <name>Оклад</name>
       <synonym>
         <key>ru</key>
-        <value>Оклад</value>
+        <value>Начислено по окладу</value>
       </synonym>
       <type>
         <types>Number</types>
@@ -129,7 +129,7 @@
       <name>ПроцентОтРабот</name>
       <synonym>
         <key>ru</key>
-        <value>Процент от работ</value>
+        <value>Вознаграждение за работы</value>
       </synonym>
       <type>
         <types>Number</types>
@@ -222,7 +222,7 @@
         <value>Вид начисления</value>
       </synonym>
       <type>
-        <types>ChartOfCalculationTypesRef.ОсновныеНачисления</types>
+        <types>ChartOfCalculationTypesRef.ВКМ_ОсновныеНачисления</types>
       </type>
       <minValue xsi:type="core:UndefinedValue"/>
       <maxValue xsi:type="core:UndefinedValue"/>
@@ -263,5 +263,5 @@
       <dataHistory>Use</dataHistory>
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
-  </tabularSections>
+  <attributes uuid="fa11ba76-5e6e-4f35-bbdd-5477050f7ef3"><name>ВКМ_ДатаРаботНачало</name><synonym><key>ru</key><value>Начало периода работ</value></synonym><type><types>Date</types><dateQualifiers><dateFractions>Date</dateFractions></dateQualifiers></type><minValue xsi:type="core:UndefinedValue"/><maxValue xsi:type="core:UndefinedValue"/></attributes><attributes uuid="b29316fa-1ab1-4844-aa1e-a47409052962"><name>ВКМ_ДатаРаботКонец</name><synonym><key>ru</key><value>Окончание периода работ</value></synonym><type><types>Date</types><dateQualifiers><dateFractions>Date</dateFractions></dateQualifiers></type><minValue xsi:type="core:UndefinedValue"/><maxValue xsi:type="core:UndefinedValue"/></attributes><attributes uuid="57ca4606-c2a3-4773-8610-17a1ee38c9bc"><name>ВКМ_СуммаОтпускных</name><synonym><key>ru</key><value>Отпускные</value></synonym><type><types>Number</types><numberQualifiers><precision>15</precision><scale>2</scale></numberQualifiers></type><minValue xsi:type="core:UndefinedValue"/><maxValue xsi:type="core:UndefinedValue"/></attributes><attributes uuid="4e23603f-6c1f-48c5-8d13-445029596602"><name>ВКМ_НормаДней</name><synonym><key>ru</key><value>Рабочих дней по норме</value></synonym><type><types>Number</types><numberQualifiers><precision>15</precision><scale>2</scale></numberQualifiers></type><minValue xsi:type="core:UndefinedValue"/><maxValue xsi:type="core:UndefinedValue"/></attributes><attributes uuid="ed217632-581e-44da-9e0f-353c083368ed"><name>ВКМ_ФактДней</name><synonym><key>ru</key><value>Фактически рабочих дней</value></synonym><type><types>Number</types><numberQualifiers><precision>15</precision><scale>2</scale></numberQualifiers></type><minValue xsi:type="core:UndefinedValue"/><maxValue xsi:type="core:UndefinedValue"/></attributes></tabularSections>
 </mdclass:Document>

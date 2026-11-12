@@ -1,0 +1,213 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<form:Form xmlns:form="http://g5.1c.ru/v8/dt/form" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <items xsi:type="form:FormField">
+    <name>ВКМ_НачалоКалендаря</name>
+    <id>1</id>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <dataPath xsi:type="form:DataPath">
+      <segments>Объект.ВКМ_НачалоКалендаря</segments>
+    </dataPath>
+    <type>InputField</type>
+    <extInfo xsi:type="form:InputFieldExtInfo">
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+    </extInfo>
+  </items>
+  <items xsi:type="form:FormField">
+    <name>ВКМ_КонецКалендаря</name>
+    <id>2</id>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <dataPath xsi:type="form:DataPath">
+      <segments>Объект.ВКМ_КонецКалендаря</segments>
+    </dataPath>
+    <type>InputField</type>
+    <extInfo xsi:type="form:InputFieldExtInfo">
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+    </extInfo>
+  </items>
+  <items xsi:type="form:FormField">
+    <name>ВКМ_ГодДемо</name>
+    <id>3</id>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <dataPath xsi:type="form:DataPath">
+      <segments>Объект.ВКМ_ГодДемо</segments>
+    </dataPath>
+    <type>InputField</type>
+    <extInfo xsi:type="form:InputFieldExtInfo">
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+    </extInfo>
+  </items>
+  <items xsi:type="form:FormField">
+    <name>ВКМ_ЭтоДемоБаза</name>
+    <id>4</id>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <dataPath xsi:type="form:DataPath">
+      <segments>Объект.ВКМ_ЭтоДемоБаза</segments>
+    </dataPath>
+    <type>CheckBoxField</type>
+    <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+  </items>
+  <items xsi:type="form:FormField">
+    <name>ВКМ_Результат</name>
+    <id>5</id>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <dataPath xsi:type="form:DataPath">
+      <segments>Объект.ВКМ_Результат</segments>
+    </dataPath>
+    <type>InputField</type>
+    <readOnly>true</readOnly>
+    <extInfo xsi:type="form:InputFieldExtInfo">
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+    </extInfo>
+  </items>
+  <autoCommandBar>
+    <name>ФормаКоманднаяПанель</name>
+    <id>-1</id>
+    <autoFill>true</autoFill>
+    <items xsi:type="form:Button">
+      <name>КнопкаВКМ_Настроить</name>
+      <id>6</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <commandName>Form.Command.ВКМ_Настроить</commandName>
+      <placementArea>UserCmds</placementArea>
+    </items>
+    <items xsi:type="form:Button">
+      <name>КнопкаВКМ_Календарь</name>
+      <id>7</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <commandName>Form.Command.ВКМ_Календарь</commandName>
+      <placementArea>UserCmds</placementArea>
+    </items>
+    <items xsi:type="form:Button">
+      <name>КнопкаВКМ_Пересчитать</name>
+      <id>8</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <commandName>Form.Command.ВКМ_Пересчитать</commandName>
+      <placementArea>UserCmds</placementArea>
+    </items>
+    <items xsi:type="form:Button">
+      <name>КнопкаВКМ_Демо</name>
+      <id>9</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <commandName>Form.Command.ВКМ_Демо</commandName>
+      <placementArea>UserCmds</placementArea>
+    </items>
+    <items xsi:type="form:Button">
+      <name>КнопкаВКМ_Пользователи</name>
+      <id>10</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <commandName>Form.Command.ВКМ_Пользователи</commandName>
+      <placementArea>UserCmds</placementArea>
+    </items>
+  </autoCommandBar>
+  <formCommands>
+    <name>ВКМ_Настроить</name>
+    <title>
+      <key>ru</key>
+      <value>Настроить виды расчета</value>
+    </title>
+    <id>1</id>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>ВКМ_Настроить</name>
+      </handler>
+    </action>
+  </formCommands>
+  <formCommands>
+    <name>ВКМ_Календарь</name>
+    <title>
+      <key>ru</key>
+      <value>Дополнить календарь по пятидневке</value>
+    </title>
+    <id>2</id>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>ВКМ_Календарь</name>
+      </handler>
+    </action>
+  </formCommands>
+  <formCommands>
+    <name>ВКМ_Пересчитать</name>
+    <title>
+      <key>ru</key>
+      <value>Пересчитать начисления с начала периода</value>
+    </title>
+    <id>3</id>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>ВКМ_Пересчитать</name>
+      </handler>
+    </action>
+  </formCommands>
+  <formCommands>
+    <name>ВКМ_Демо</name>
+    <title>
+      <key>ru</key>
+      <value>Создать демонстрационные данные</value>
+    </title>
+    <id>4</id>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>ВКМ_Демо</name>
+      </handler>
+    </action>
+  </formCommands>
+  <formCommands>
+    <name>ВКМ_Пользователи</name>
+    <title>
+      <key>ru</key>
+      <value>Создать тестовых пользователей</value>
+    </title>
+    <id>5</id>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>ВКМ_Пользователи</name>
+      </handler>
+    </action>
+  </formCommands>
+  <autoTitle>true</autoTitle>
+  <group>Vertical</group>
+  <enabled>true</enabled>
+  <showTitle>true</showTitle>
+  <showCloseButton>true</showCloseButton>
+  <attributes>
+    <name>Объект</name>
+    <id>1</id>
+    <valueType>
+      <types>DataProcessorObject.ВКМ_СервисПроекта</types>
+    </valueType>
+    <main>true</main>
+  </attributes>
+  <handlers>
+    <event>OnCreateAtServer</event>
+    <name>ВКМ_ПриСозданииНаСервере</name>
+  </handlers>
+<extInfo xsi:type="form:ObjectFormExtInfo"/></form:Form>

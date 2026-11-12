@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5aa4e295-47c3-4f23-bc40-d3e6a3f32fb1">
   <producedTypes>
     <objectType typeId="20e48e94-a6a3-4e4f-b69e-125f91ebd389" valueTypeId="4682c03f-9399-4fa9-86ab-0da7a88256c7"/>
@@ -7,7 +7,7 @@
   <name>ВКМ_ВыработкаСпециалистов</name>
   <synonym>
     <key>ru</key>
-    <value>ВКМ выработка специалистов</value>
+    <value>Выработка специалистов</value>
   </synonym>
   <useStandardCommands>true</useStandardCommands>
   <mainDataCompositionSchema>Report.ВКМ_ВыработкаСпециалистов.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>

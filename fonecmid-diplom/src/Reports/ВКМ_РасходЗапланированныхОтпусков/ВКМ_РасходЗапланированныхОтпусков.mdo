@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="57145477-0c16-4480-a36c-f54b18912fb3">
   <producedTypes>
     <objectType typeId="897be03d-47a8-4d60-8bb5-a8b63fc05405" valueTypeId="b8338242-05b7-48f8-be15-f367f6c04e42"/>
@@ -7,7 +7,7 @@
   <name>ВКМ_РасходЗапланированныхОтпусков</name>
   <synonym>
     <key>ru</key>
-    <value>ВКМ расход запланированных отпусков</value>
+    <value>Расход запланированных отпусков</value>
   </synonym>
   <useStandardCommands>true</useStandardCommands>
   <mainDataCompositionSchema>Report.ВКМ_РасходЗапланированныхОтпусков.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>

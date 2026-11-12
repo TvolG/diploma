@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <form:Form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:form="http://g5.1c.ru/v8/dt/form">
   <items xsi:type="form:FormGroup">
     <name>Шапка</name>
@@ -814,5 +814,5 @@
   </commandInterface>
   <extInfo xsi:type="form:DocumentFormExtInfo">
     <repostOnWrite>true</repostOnWrite>
-  </extInfo>
-</form:Form>
+  <handlers><event>OnReadAtServer</event><name>ПриЧтенииНаСервере</name></handlers><handlers><event>AfterWrite</event><name>ПослеЗаписи</name></handlers></extInfo>
+<handlers><event>OnOpen</event><name>ПриОткрытии</name></handlers></form:Form>

@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" uuid="c8e2edb6-1be7-41c9-aa58-45725f56af41">
+  <name>ВКМ_НачальнаяНастройка</name>
+  <synonym>
+    <key>ru</key>
+    <value>НачальнаяНастройка</value>
+  </synonym>
+  <server>true</server>
+  <externalConnection>true</externalConnection>
+  <privileged>true</privileged>
+</mdclass:CommonModule>

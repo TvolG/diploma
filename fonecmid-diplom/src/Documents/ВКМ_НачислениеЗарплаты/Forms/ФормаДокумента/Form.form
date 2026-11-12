@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<form:Form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:form="http://g5.1c.ru/v8/dt/form">
+<?xml version='1.0' encoding='UTF-8'?>
+<form:Form xmlns:form="http://g5.1c.ru/v8/dt/form" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <items xsi:type="form:FormField">
     <name>Номер</name>
     <id>1</id>
@@ -75,12 +75,17 @@
       <textEdit>true</textEdit>
     </extInfo>
   </items>
-  <items xsi:type="form:FormTable">
+  <items xsi:type="form:Table">
     <name>Начисления</name>
-    <id>16</id>
+    <id>6</id>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <dataPath xsi:type="form:DataPath">
+      <segments>Объект.Начисления</segments>
+    </dataPath>
     <items xsi:type="form:FormField">
       <name>НачисленияСотрудник</name>
-      <id>6</id>
+      <id>7</id>
       <visible>true</visible>
       <enabled>true</enabled>
       <dataPath xsi:type="form:DataPath">
@@ -94,8 +99,8 @@
       </extInfo>
     </items>
     <items xsi:type="form:FormField">
-      <name>НачисленияВидНачисления</name>
-      <id>7</id>
+      <name>НачисленияВКМ_ВидНачисления</name>
+      <id>8</id>
       <visible>true</visible>
       <enabled>true</enabled>
       <dataPath xsi:type="form:DataPath">
@@ -109,8 +114,8 @@
       </extInfo>
     </items>
     <items xsi:type="form:FormField">
-      <name>НачисленияДатаНачала</name>
-      <id>8</id>
+      <name>НачисленияВКМ_ДатаНачала</name>
+      <id>9</id>
       <visible>true</visible>
       <enabled>true</enabled>
       <dataPath xsi:type="form:DataPath">
@@ -124,8 +129,8 @@
       </extInfo>
     </items>
     <items xsi:type="form:FormField">
-      <name>НачисленияДатаОкончания</name>
-      <id>9</id>
+      <name>НачисленияВКМ_ДатаОкончания</name>
+      <id>10</id>
       <visible>true</visible>
       <enabled>true</enabled>
       <dataPath xsi:type="form:DataPath">
@@ -139,8 +144,38 @@
       </extInfo>
     </items>
     <items xsi:type="form:FormField">
+      <name>НачисленияВКМ_ДатаРаботНачало</name>
+      <id>11</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <dataPath xsi:type="form:DataPath">
+        <segments>Объект.Начисления.ВКМ_ДатаРаботНачало</segments>
+      </dataPath>
+      <type>InputField</type>
+      <extInfo xsi:type="form:InputFieldExtInfo">
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <textEdit>true</textEdit>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormField">
+      <name>НачисленияВКМ_ДатаРаботКонец</name>
+      <id>12</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <dataPath xsi:type="form:DataPath">
+        <segments>Объект.Начисления.ВКМ_ДатаРаботКонец</segments>
+      </dataPath>
+      <type>InputField</type>
+      <extInfo xsi:type="form:InputFieldExtInfo">
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <textEdit>true</textEdit>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormField">
       <name>НачисленияОклад</name>
-      <id>10</id>
+      <id>13</id>
       <visible>true</visible>
       <enabled>true</enabled>
       <dataPath xsi:type="form:DataPath">
@@ -156,7 +191,7 @@
     </items>
     <items xsi:type="form:FormField">
       <name>НачисленияПроцентОтРабот</name>
-      <id>11</id>
+      <id>14</id>
       <visible>true</visible>
       <enabled>true</enabled>
       <dataPath xsi:type="form:DataPath">
@@ -171,8 +206,72 @@
       </extInfo>
     </items>
     <items xsi:type="form:FormField">
+      <name>НачисленияВКМ_СуммаОтпускных</name>
+      <id>15</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <dataPath xsi:type="form:DataPath">
+        <segments>Объект.Начисления.ВКМ_СуммаОтпускных</segments>
+      </dataPath>
+      <type>InputField</type>
+      <readOnly>true</readOnly>
+      <extInfo xsi:type="form:InputFieldExtInfo">
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <textEdit>true</textEdit>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormField">
+      <name>НачисленияВКМ_НормаДней</name>
+      <id>16</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <dataPath xsi:type="form:DataPath">
+        <segments>Объект.Начисления.ВКМ_НормаДней</segments>
+      </dataPath>
+      <type>InputField</type>
+      <readOnly>true</readOnly>
+      <extInfo xsi:type="form:InputFieldExtInfo">
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <textEdit>true</textEdit>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormField">
+      <name>НачисленияВКМ_ФактДней</name>
+      <id>17</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <dataPath xsi:type="form:DataPath">
+        <segments>Объект.Начисления.ВКМ_ФактДней</segments>
+      </dataPath>
+      <type>InputField</type>
+      <readOnly>true</readOnly>
+      <extInfo xsi:type="form:InputFieldExtInfo">
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <textEdit>true</textEdit>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormField">
+      <name>НачисленияКоличествоДнейОтпуска</name>
+      <id>18</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <dataPath xsi:type="form:DataPath">
+        <segments>Объект.Начисления.КоличествоДнейОтпуска</segments>
+      </dataPath>
+      <type>InputField</type>
+      <readOnly>true</readOnly>
+      <extInfo xsi:type="form:InputFieldExtInfo">
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <textEdit>true</textEdit>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormField">
       <name>НачисленияИтого</name>
-      <id>12</id>
+      <id>19</id>
       <visible>true</visible>
       <enabled>true</enabled>
       <dataPath xsi:type="form:DataPath">
@@ -188,7 +287,7 @@
     </items>
     <items xsi:type="form:FormField">
       <name>НачисленияНДФЛ</name>
-      <id>13</id>
+      <id>20</id>
       <visible>true</visible>
       <enabled>true</enabled>
       <dataPath xsi:type="form:DataPath">
@@ -203,23 +302,8 @@
       </extInfo>
     </items>
     <items xsi:type="form:FormField">
-      <name>НачисленияКоличествоДнейОтпуска</name>
-      <id>14</id>
-      <visible>true</visible>
-      <enabled>true</enabled>
-      <dataPath xsi:type="form:DataPath">
-        <segments>Объект.Начисления.КоличествоДнейОтпуска</segments>
-      </dataPath>
-      <type>InputField</type>
-      <extInfo xsi:type="form:InputFieldExtInfo">
-        <autoMaxWidth>true</autoMaxWidth>
-        <autoMaxHeight>true</autoMaxHeight>
-        <textEdit>true</textEdit>
-      </extInfo>
-    </items>
-    <items xsi:type="form:FormField">
       <name>НачисленияКВыплате</name>
-      <id>15</id>
+      <id>21</id>
       <visible>true</visible>
       <enabled>true</enabled>
       <dataPath xsi:type="form:DataPath">
@@ -233,14 +317,9 @@
         <textEdit>true</textEdit>
       </extInfo>
     </items>
-    <visible>true</visible>
-    <enabled>true</enabled>
-    <dataPath xsi:type="form:DataPath">
-      <segments>Объект.Начисления</segments>
-    </dataPath>
     <autoCommandBar>
       <name>НачисленияКоманднаяПанель</name>
-      <id>17</id>
+      <id>22</id>
       <autoFill>true</autoFill>
     </autoCommandBar>
     <changeRowSet>true</changeRowSet>
@@ -251,38 +330,126 @@
     <id>-1</id>
     <autoFill>true</autoFill>
     <items xsi:type="form:Button">
-      <name>КнопкаДвиженияОсновныеНачисления</name>
-      <id>22</id>
-      <visible>true</visible>
-      <enabled>true</enabled>
-      <commandName>Form.Command.ВКМ_ДвиженияОсновныеНачисления</commandName>
-      <placementArea>UserCmds</placementArea>
-    </items>
-    <items xsi:type="form:Button">
-      <name>КнопкаДвиженияУдержания</name>
+      <name>КнопкаВКМ_ЗаполнитьСотрудников</name>
       <id>23</id>
       <visible>true</visible>
       <enabled>true</enabled>
-      <commandName>Form.Command.ВКМ_ДвиженияУдержания</commandName>
+      <commandName>Form.Command.ВКМ_ЗаполнитьСотрудников</commandName>
       <placementArea>UserCmds</placementArea>
     </items>
     <items xsi:type="form:Button">
-      <name>КнопкаДвиженияВзаиморасчетыССотрудниками</name>
+      <name>КнопкаВКМ_ДвиженияВКМ_ОсновныеНачисления</name>
       <id>24</id>
       <visible>true</visible>
       <enabled>true</enabled>
-      <commandName>Form.Command.ВКМ_ДвиженияВзаиморасчетыССотрудниками</commandName>
+      <commandName>Form.Command.ВКМ_ДвиженияВКМ_ОсновныеНачисления</commandName>
       <placementArea>UserCmds</placementArea>
     </items>
     <items xsi:type="form:Button">
-      <name>КнопкаДвиженияОстаткиОтпусковСотрудников</name>
+      <name>КнопкаВКМ_ДвиженияВКМ_Удержания</name>
       <id>25</id>
       <visible>true</visible>
       <enabled>true</enabled>
-      <commandName>Form.Command.ВКМ_ДвиженияОстаткиОтпусковСотрудников</commandName>
+      <commandName>Form.Command.ВКМ_ДвиженияВКМ_Удержания</commandName>
+      <placementArea>UserCmds</placementArea>
+    </items>
+    <items xsi:type="form:Button">
+      <name>КнопкаВКМ_ДвиженияВКМ_ВзаиморасчетыССотрудниками</name>
+      <id>26</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <commandName>Form.Command.ВКМ_ДвиженияВКМ_ВзаиморасчетыССотрудниками</commandName>
+      <placementArea>UserCmds</placementArea>
+    </items>
+    <items xsi:type="form:Button">
+      <name>КнопкаВКМ_ДвиженияВКМ_ОстаткиОтпусковСотрудников</name>
+      <id>27</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <commandName>Form.Command.ВКМ_ДвиженияВКМ_ОстаткиОтпусковСотрудников</commandName>
       <placementArea>UserCmds</placementArea>
     </items>
   </autoCommandBar>
+  <formCommands>
+    <name>ВКМ_ЗаполнитьСотрудников</name>
+    <title>
+      <key>ru</key>
+      <value>Заполнить сотрудников</value>
+    </title>
+    <id>1</id>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>ВКМ_ЗаполнитьСотрудников</name>
+      </handler>
+    </action>
+  </formCommands>
+  <formCommands>
+    <name>ВКМ_ДвиженияВКМ_ОсновныеНачисления</name>
+    <title>
+      <key>ru</key>
+      <value>Движения: ОсновныеНачисления</value>
+    </title>
+    <id>2</id>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>ВКМ_ДвиженияВКМ_ОсновныеНачисления</name>
+      </handler>
+    </action>
+  </formCommands>
+  <formCommands>
+    <name>ВКМ_ДвиженияВКМ_Удержания</name>
+    <title>
+      <key>ru</key>
+      <value>Движения: Удержания</value>
+    </title>
+    <id>3</id>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>ВКМ_ДвиженияВКМ_Удержания</name>
+      </handler>
+    </action>
+  </formCommands>
+  <formCommands>
+    <name>ВКМ_ДвиженияВКМ_ВзаиморасчетыССотрудниками</name>
+    <title>
+      <key>ru</key>
+      <value>Движения: ВзаиморасчетыССотрудниками</value>
+    </title>
+    <id>4</id>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>ВКМ_ДвиженияВКМ_ВзаиморасчетыССотрудниками</name>
+      </handler>
+    </action>
+  </formCommands>
+  <formCommands>
+    <name>ВКМ_ДвиженияВКМ_ОстаткиОтпусковСотрудников</name>
+    <title>
+      <key>ru</key>
+      <value>Движения: ОстаткиОтпусковСотрудников</value>
+    </title>
+    <id>5</id>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>ВКМ_ДвиженияВКМ_ОстаткиОтпусковСотрудников</name>
+      </handler>
+    </action>
+  </formCommands>
   <autoTitle>true</autoTitle>
   <group>Vertical</group>
   <autoFillCheck>true</autoFillCheck>
@@ -299,74 +466,6 @@
     <main>true</main>
     <savedData>true</savedData>
   </attributes>
-  <formCommands>
-    <name>ВКМ_ДвиженияОсновныеНачисления</name>
-    <title>
-      <key>ru</key>
-      <value>Движения: ОсновныеНачисления</value>
-    </title>
-    <id>18</id>
-    <use>
-      <common>true</common>
-    </use>
-    <action xsi:type="form:FormCommandHandlerContainer">
-      <handler>
-        <name>ВКМ_ДвиженияОсновныеНачисления</name>
-      </handler>
-    </action>
-    <currentRowUse>Auto</currentRowUse>
-  </formCommands>
-  <formCommands>
-    <name>ВКМ_ДвиженияУдержания</name>
-    <title>
-      <key>ru</key>
-      <value>Движения: Удержания</value>
-    </title>
-    <id>19</id>
-    <use>
-      <common>true</common>
-    </use>
-    <action xsi:type="form:FormCommandHandlerContainer">
-      <handler>
-        <name>ВКМ_ДвиженияУдержания</name>
-      </handler>
-    </action>
-    <currentRowUse>Auto</currentRowUse>
-  </formCommands>
-  <formCommands>
-    <name>ВКМ_ДвиженияВзаиморасчетыССотрудниками</name>
-    <title>
-      <key>ru</key>
-      <value>Движения: ВзаиморасчетыССотрудниками</value>
-    </title>
-    <id>20</id>
-    <use>
-      <common>true</common>
-    </use>
-    <action xsi:type="form:FormCommandHandlerContainer">
-      <handler>
-        <name>ВКМ_ДвиженияВзаиморасчетыССотрудниками</name>
-      </handler>
-    </action>
-    <currentRowUse>Auto</currentRowUse>
-  </formCommands>
-  <formCommands>
-    <name>ВКМ_ДвиженияОстаткиОтпусковСотрудников</name>
-    <title>
-      <key>ru</key>
-      <value>Движения: ОстаткиОтпусковСотрудников</value>
-    </title>
-    <id>21</id>
-    <use>
-      <common>true</common>
-    </use>
-    <action xsi:type="form:FormCommandHandlerContainer">
-      <handler>
-        <name>ВКМ_ДвиженияОстаткиОтпусковСотрудников</name>
-      </handler>
-    </action>
-    <currentRowUse>Auto</currentRowUse>
-  </formCommands>
   <commandInterface>
     <navigationPanel/>
     <commandBar/>

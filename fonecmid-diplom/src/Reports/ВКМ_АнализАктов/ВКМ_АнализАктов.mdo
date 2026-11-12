@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0116ab22-2426-45c4-a4f4-8afb2ec1d36d">
   <producedTypes>
     <objectType typeId="df09c5fa-4fc6-47e2-aafe-f846a1e99a2c" valueTypeId="0bc4a328-27c9-4e28-acdc-e881d3efdbad"/>
@@ -7,7 +7,7 @@
   <name>ВКМ_АнализАктов</name>
   <synonym>
     <key>ru</key>
-    <value>ВКМ анализ актов</value>
+    <value>Анализ выставленных актов</value>
   </synonym>
   <useStandardCommands>true</useStandardCommands>
   <defaultForm>Report.ВКМ_АнализАктов.Form.ФормаОтчета</defaultForm>

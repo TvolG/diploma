@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="15e50731-033b-478d-95ad-f4900aaabe5e">
   <producedTypes>
     <objectType typeId="7179f220-a665-4ee2-be51-6986f5360c08" valueTypeId="a3a20dc9-0b35-48ee-a76e-eb7ed0307989"/>
@@ -110,7 +110,7 @@
     <type>
       <types>Date</types>
       <dateQualifiers>
-        <dateFractions>Date</dateFractions>
+        <dateFractions>DateTime</dateFractions>
       </dateQualifiers>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
@@ -128,7 +128,7 @@
     <type>
       <types>Date</types>
       <dateQualifiers>
-        <dateFractions>Date</dateFractions>
+        <dateFractions>DateTime</dateFractions>
       </dateQualifiers>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
@@ -255,4 +255,4 @@
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
   </tabularSections>
-</mdclass:Document>
+<registerRecords>AccumulationRegister.ВКМ_ВыполненныеСотрудникомРаботы</registerRecords></mdclass:Document>

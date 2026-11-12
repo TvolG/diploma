@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" uuid="c5c8b8bf-de0a-448c-b92d-25dd2d04382a">
+  <name>ВКМ_ДемонстрационныеДанные</name>
+  <synonym>
+    <key>ru</key>
+    <value>ДемонстрационныеДанные</value>
+  </synonym>
+  <server>true</server>
+  <externalConnection>true</externalConnection>
+  <privileged>true</privileged>
+</mdclass:CommonModule>

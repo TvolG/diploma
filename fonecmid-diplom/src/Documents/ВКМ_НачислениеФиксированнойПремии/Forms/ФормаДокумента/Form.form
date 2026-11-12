@@ -1,0 +1,211 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<form:Form xmlns:form="http://g5.1c.ru/v8/dt/form" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <items xsi:type="form:FormField">
+    <name>Номер</name>
+    <id>1</id>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <dataPath xsi:type="form:DataPath">
+      <segments>Объект.Number</segments>
+    </dataPath>
+    <type>InputField</type>
+    <extInfo xsi:type="form:InputFieldExtInfo">
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <textEdit>true</textEdit>
+    </extInfo>
+  </items>
+  <items xsi:type="form:FormField">
+    <name>Дата</name>
+    <id>2</id>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <dataPath xsi:type="form:DataPath">
+      <segments>Объект.Date</segments>
+    </dataPath>
+    <type>InputField</type>
+    <extInfo xsi:type="form:InputFieldExtInfo">
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <textEdit>true</textEdit>
+    </extInfo>
+  </items>
+  <items xsi:type="form:Table">
+    <name>СписокСотрудников</name>
+    <id>3</id>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <dataPath xsi:type="form:DataPath">
+      <segments>Объект.СписокСотрудников</segments>
+    </dataPath>
+    <items xsi:type="form:FormField">
+      <name>СписокСотрудниковСотрудник</name>
+      <id>4</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <dataPath xsi:type="form:DataPath">
+        <segments>Объект.СписокСотрудников.Сотрудник</segments>
+      </dataPath>
+      <type>InputField</type>
+      <extInfo xsi:type="form:InputFieldExtInfo">
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <textEdit>true</textEdit>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormField">
+      <name>СписокСотрудниковСуммаПремии</name>
+      <id>5</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <dataPath xsi:type="form:DataPath">
+        <segments>Объект.СписокСотрудников.СуммаПремии</segments>
+      </dataPath>
+      <type>InputField</type>
+      <extInfo xsi:type="form:InputFieldExtInfo">
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <textEdit>true</textEdit>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormField">
+      <name>СписокСотрудниковВКМ_НДФЛ</name>
+      <id>6</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <dataPath xsi:type="form:DataPath">
+        <segments>Объект.СписокСотрудников.ВКМ_НДФЛ</segments>
+      </dataPath>
+      <type>InputField</type>
+      <readOnly>true</readOnly>
+      <extInfo xsi:type="form:InputFieldExtInfo">
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <textEdit>true</textEdit>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormField">
+      <name>СписокСотрудниковВКМ_КВыплате</name>
+      <id>7</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <dataPath xsi:type="form:DataPath">
+        <segments>Объект.СписокСотрудников.ВКМ_КВыплате</segments>
+      </dataPath>
+      <type>InputField</type>
+      <readOnly>true</readOnly>
+      <extInfo xsi:type="form:InputFieldExtInfo">
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <textEdit>true</textEdit>
+      </extInfo>
+    </items>
+    <autoCommandBar>
+      <name>СписокСотрудниковКоманднаяПанель</name>
+      <id>8</id>
+      <autoFill>true</autoFill>
+    </autoCommandBar>
+    <changeRowSet>true</changeRowSet>
+    <changeRowOrder>true</changeRowOrder>
+  </items>
+  <autoCommandBar>
+    <name>ФормаКоманднаяПанель</name>
+    <id>-1</id>
+    <autoFill>true</autoFill>
+    <items xsi:type="form:Button">
+      <name>КнопкаВКМ_ДвиженияВКМ_ДополнительныеНачисления</name>
+      <id>9</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <commandName>Form.Command.ВКМ_ДвиженияВКМ_ДополнительныеНачисления</commandName>
+      <placementArea>UserCmds</placementArea>
+    </items>
+    <items xsi:type="form:Button">
+      <name>КнопкаВКМ_ДвиженияВКМ_Удержания</name>
+      <id>10</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <commandName>Form.Command.ВКМ_ДвиженияВКМ_Удержания</commandName>
+      <placementArea>UserCmds</placementArea>
+    </items>
+    <items xsi:type="form:Button">
+      <name>КнопкаВКМ_ДвиженияВКМ_ВзаиморасчетыССотрудниками</name>
+      <id>11</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <commandName>Form.Command.ВКМ_ДвиженияВКМ_ВзаиморасчетыССотрудниками</commandName>
+      <placementArea>UserCmds</placementArea>
+    </items>
+  </autoCommandBar>
+  <formCommands>
+    <name>ВКМ_ДвиженияВКМ_ДополнительныеНачисления</name>
+    <title>
+      <key>ru</key>
+      <value>Движения: ДополнительныеНачисления</value>
+    </title>
+    <id>1</id>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>ВКМ_ДвиженияВКМ_ДополнительныеНачисления</name>
+      </handler>
+    </action>
+  </formCommands>
+  <formCommands>
+    <name>ВКМ_ДвиженияВКМ_Удержания</name>
+    <title>
+      <key>ru</key>
+      <value>Движения: Удержания</value>
+    </title>
+    <id>2</id>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>ВКМ_ДвиженияВКМ_Удержания</name>
+      </handler>
+    </action>
+  </formCommands>
+  <formCommands>
+    <name>ВКМ_ДвиженияВКМ_ВзаиморасчетыССотрудниками</name>
+    <title>
+      <key>ru</key>
+      <value>Движения: ВзаиморасчетыССотрудниками</value>
+    </title>
+    <id>3</id>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>ВКМ_ДвиженияВКМ_ВзаиморасчетыССотрудниками</name>
+      </handler>
+    </action>
+  </formCommands>
+  <autoTitle>true</autoTitle>
+  <group>Vertical</group>
+  <autoFillCheck>true</autoFillCheck>
+  <allowFormCustomize>true</allowFormCustomize>
+  <enabled>true</enabled>
+  <showTitle>true</showTitle>
+  <showCloseButton>true</showCloseButton>
+  <attributes>
+    <name>Объект</name>
+    <id>1</id>
+    <valueType>
+      <types>DocumentObject.ВКМ_НачислениеФиксированнойПремии</types>
+    </valueType>
+    <main>true</main>
+    <savedData>true</savedData>
+  </attributes>
+  <commandInterface>
+    <navigationPanel/>
+    <commandBar/>
+  </commandInterface>
+  <extInfo xsi:type="form:DocumentFormExtInfo">
+    <repostOnWrite>true</repostOnWrite>
+  </extInfo>
+</form:Form>

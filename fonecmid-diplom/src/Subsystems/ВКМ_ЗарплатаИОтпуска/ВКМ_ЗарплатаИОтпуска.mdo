@@ -1,15 +1,15 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5cfab740-772f-4ffd-8878-4a73b8e63234">
   <name>ВКМ_ЗарплатаИОтпуска</name>
-  <synonym><key>ru</key><value>Зарплата и отпуска</value></synonym>
+  <synonym><key>ru</key><value>Расчёт управленческой зарплаты</value></synonym>
   <includeHelpInContents>true</includeHelpInContents>
   <includeInCommandInterface>true</includeInCommandInterface>
   <content>Document.ВКМ_НачислениеЗарплаты</content>
-  <content>Document.ВыплатаЗарплаты</content>
-  <content>Document.ГрафикОтпусков</content>
-  <content>InformationRegister.УсловияОплатыСотрудников</content>
-  <content>Report.РасчётыССотрудниками</content>
+  <content>Document.ВКМ_ВыплатаЗарплаты</content>
+  <content>Document.ВКМ_ГрафикОтпусков</content>
+  <content>InformationRegister.ВКМ_УсловияОплатыСотрудников</content>
+  <content>Report.ВКМ_РасчётыССотрудниками</content>
   <content>Report.ВКМ_РасходЗапланированныхОтпусков</content>
   <content>Report.ВКМ_ВыработкаСпециалистов</content>
-  <content>Document.НачислениеФиксированнойПремии</content>
-</mdclass:Subsystem>
+  <content>Document.ВКМ_НачислениеФиксированнойПремии</content>
+<content>InformationRegister.ВКМ_КалендарьРаботы</content><content>AccumulationRegister.ВКМ_ВыполненныеСотрудникомРаботы</content><content>ChartOfCalculationTypes.ВКМ_ОсновныеНачисления</content><content>ChartOfCalculationTypes.ВКМ_ДополнительныеНачисления</content><content>ChartOfCalculationTypes.ВКМ_Удержания</content><content>DataProcessor.ВКМ_СервисПроекта</content></mdclass:Subsystem>
